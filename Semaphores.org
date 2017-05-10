@@ -1,0 +1,143 @@
+#+TITLE: Semaphores : multiplexing writers
+
+
+* Unsynchronized writer
+Beware of buffering : https://stackoverflow.com/questions/2530663/
+#+BEGIN_SRC c :tangle write-chars.c
+  #include <stdio.h>
+  #include <unistd.h>
+  #include <stdlib.h>
+
+  int main(int argc, char* argv[]){
+    char* prefix= argc >1 ? argv[1] : ".";
+    int n= argc >2 ? atoi(argv[2]) : 32;
+    while(1){
+      for (int i =0; i != n; ++i){
+        fprintf(stdout,"[%s:%c]",prefix,('a'+i));
+        fflush(stdout);
+        usleep(100000);
+      }
+      fprintf(stdout, "\n");
+    }
+    return 0;
+  }
+#+END_SRC
+
+
+
+#+BEGIN_SRC shell
+./write-chars 1 & ./write-chars 2 & ./write-chars 3
+#+END_SRC
+* Synchronized with a semaphore
+
+#+BEGIN_SRC c :tangle sem-write-chars.c
+  #include <stdio.h>
+  #include <signal.h>
+  #include <unistd.h>
+  #include <stdlib.h>
+  #include <fcntl.h>
+  #include <sys/stat.h>
+  #include <semaphore.h>
+
+
+  sem_t * sem=0;
+  int should_release=0;
+  void release(){
+    if (should_release){
+      sem_post(sem);
+      should_release=0;
+    }
+  }
+
+  void handler(int signum){
+  fprintf(stderr,"releasing !\n");
+    release();
+    exit(0);
+  }
+
+  int main(int argc, char* argv[]){
+    char* prefix= argc >1 ? argv[1] : ".";
+    int n= argc >2 ? atoi(argv[2]) : 32;
+    int res=0;
+    sem = sem_open("/writechar", O_CREAT,0644, 1);
+    signal(SIGINT, handler);
+    if (sem == SEM_FAILED)
+      {
+        perror("cannot open or create the semaphore");
+        return -2;
+      }
+    while(1){
+      res = sem_wait(sem);
+      if(res){
+      /* error handling ! */
+      }
+      should_release= 1;
+      for (int i =0; i != n; ++i){
+        fprintf(stdout,"[%s:%c]",prefix,('a'+i));
+        fflush(stdout);
+        usleep(100000);
+      }
+      fprintf(stdout, "\n");
+      release();/* what if we slept before the release ? */
+      usleep(100000);
+    }
+    return 0;
+  }
+
+
+#+END_SRC
+
+#+BEGIN_SRC shell
+./sem-write-chars 1 & ./sem-write-chars 2 & ./sem-write-chars 3
+#+END_SRC
+
+#+BEGIN_SRC shell
+ls /dev/shm
+#+END_SRC
+
+* Shared memory :noexport:
+http://www.cse.psu.edu/~deh25/cmpsc473/notes/OSC/Processes/shm-posix-producer.c
+#+BEGIN_SRC c :tangle shm-write-read.c
+  #include <stdio.h>
+  #include <unistd.h>
+  #include <stdlib.h>
+  #include <fcntl.h>
+  #include <sys/stat.h>
+  #include <sys/mman.h>
+  #include <errno.h>
+  #include <string.h>
+
+  int main(int argc, char* argv[]){
+    const char *name = "/shm-example";  // file name
+    const int SIZE = 4096;    // file size
+
+    int shm_fd;   // file descriptor, from shm_open()
+    char *shm_base; // base address, from mmap()
+    char *ptr;    // shm_base is fixed, ptr is movable
+    char *to_write= argc >1 ? argv[1] : "test";
+    /* create the shared memory segment as if it was a file */
+    shm_fd = shm_open(name, O_CREAT | O_RDWR, 0666);
+    if (shm_fd == -1) {
+      printf("prod: Shared memory failed: %s\n", strerror(errno));
+      exit(1);
+    }
+
+    /* configure the size of the shared memory segment */
+    ftruncate(shm_fd, SIZE);
+    shm_base = mmap(0, SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
+    if (shm_base == MAP_FAILED) {
+      printf("prod: Map failed: %s\n", strerror(errno));
+      // close and shm_unlink?
+      exit(1);
+    }
+    while(1){
+      ptr=shm_base;
+      for (int i=0; i !=10; ++i){
+        ptr+=sprintf(ptr,"[%s]",to_write);
+      }
+      usleep(1000);
+      if (argc >2){fprintf(stderr, ">%s<\n",shm_base); sleep(1);}
+    }
+    return 0;
+  }
+#+END_SRC

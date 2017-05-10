@@ -1,0 +1,148 @@
+
+* References
+
+https://users.pja.edu.pl/~jms/qnx/help/watcom/clibref/mq_overview.html#CompilingLinking  ???
+http://www.blaess.fr/christophe/2011/09/17/efficacite-des-ipc-les-files-de-messages-posix/
+
+http://fabrice-boissier.developpez.com/articles/introduction-posix-mq/
+
+* POSIX
+#+BEGIN_SRC c
+
+#+END_SRC
+#+BEGIN_SRC shell
+man mq_overview
+#+END_SRC
+#+BEGIN_SRC c
+#include <mqueue.h>
+// link with rt
+mqd_t   mq_open    (const char * nom, int flags, mode_t mode, struct mq_attr * attr);
+int     mq_send    (mqd_t mq, const char * msg, size_t lg, unsigned int prio);
+ssize_t mq_receive (mqd_t mq, char * msg, size_t lg, unsigned int * prio);
+int     mq_close   (mqd_t mq);
+int     mq_unlink  (const char * nom);
+#+END_SRC
+
+** Writer
+#+BEGIN_SRC c :tangle mq-time-writer.c
+  //#include <fcntl.h>
+  #include <mqueue.h>
+  #include <stdio.h>
+  #include <stdlib.h>
+  #include <unistd.h>
+  #include <sys/time.h>
+
+  int main(int argc,char * argv[])
+  {
+    mqd_t mq;
+    struct timeval* tv;
+    size_t n_written= 1;
+    if (argc < 2) {
+      fprintf(stderr, "usage: %s message-queue-name [message size in k]", argv[0]);
+      exit(EXIT_FAILURE);
+    }
+    if (argc >2) {
+      n_written= atoi(argv[2])*1024/sizeof(struct timeval);
+    }
+    tv= malloc(n_written*sizeof(struct timeval));
+    mq = mq_open(argv[1], O_WRONLY | O_CREAT, 0600, NULL);
+    if (mq == (mqd_t) -1) {
+      perror(argv[1]);
+      exit(EXIT_FAILURE);
+    }
+    while (1) {
+      gettimeofday(&tv[0], NULL);
+      mq_send(mq, (char *) tv, n_written*sizeof(struct timeval), 1);
+      usleep(1000);
+    }
+    return EXIT_SUCCESS;
+  }
+
+#+END_SRC
+
+
+
+** Reader
+#+BEGIN_SRC c :tangle mq-time-reader-chrono.c
+  //#include <fcntl.h>
+  #include <mqueue.h>
+  #include <stdio.h>
+  #include <stdlib.h>
+  #include <unistd.h>
+  #include <sys/time.h>
+
+  int main(int argc,char * argv[])
+  {
+    mqd_t mq;
+    struct timeval* tv;
+    struct timeval stop;
+    struct mq_attr attr;
+    size_t min= (size_t)-1, sum=0, max= 0, n=0; // size_t is unsigned, so max avlue is -1
+    int ret;
+    if (argc < 2) {
+      fprintf(stderr, "usage: %s message-queue-name [message size in k]", argv[0]);
+      exit(EXIT_FAILURE);
+    }
+    mq = mq_open(argv[1], O_RDONLY | O_CREAT, 0600, NULL);
+    if (mq == (mqd_t) -1) {
+      perror(argv[1]);
+      exit(EXIT_FAILURE);
+    }
+    if (mq_getattr(mq, & attr) != 0) {
+      perror("mq_getattr");
+      exit(EXIT_FAILURE);
+    }
+
+    tv= malloc(attr.mq_msgsize);
+    while (1) {
+      ret=mq_receive(mq, (char*)tv, attr.mq_msgsize, NULL);
+      if(ret >=0){
+        gettimeofday(&stop, NULL);
+        size_t d= (stop.tv_sec - tv[0].tv_sec)*1000000 + (stop.tv_usec - tv[0].tv_usec);
+        if (d < min){ min= d; }
+        if (d > max) { max= d; }
+        sum+= d;
+        ++n;
+        fprintf(stderr, "%ld\t%ld\t%ld\n", min, max, sum/n);
+      }else{fprintf(stderr,"ret:%d\n", ret);}
+    }
+    return EXIT_SUCCESS;
+  }
+
+#+END_SRC
+* Utils
+#+BEGIN_SRC c :tangle mq_attr.c
+  /*
+    || Program to test mq_getattr(3), displaying queue information.
+    ||    mq_attr <path>
+    ||    <path>   pathname of the queue, which must exist
+  ,*/
+  #include <mqueue.h>     /* message queue stuff */
+  #include <errno.h>      /* errno and perror */
+  #include <fcntl.h>      /* O_RDONLY */
+  #include <stdio.h>
+  int main(int argc, char **argv)
+  {
+    mqd_t mqd;           /* queue descriptor */
+    struct mq_attr obuf; /* output attr struct for getattr */
+    if (argc < 2)
+      {
+        printf("A pathname of a message queue is required\n");
+        return -1;
+      }
+    mqd = mq_open(argv[1],O_RDONLY);
+    if (-1 != mqd)
+      {
+        if ( ! mq_getattr(mqd,&obuf) )
+          {
+            printf("flags: 0x%x  maxmsg: %d  msgsize: %d  curmsgs: %d\n",
+                   obuf.mq_flags, obuf.mq_maxmsg, obuf.mq_msgsize, obuf.mq_curmsgs);
+          }
+        else
+          perror("mq_getattr()");
+      }
+    else
+      perror("mq_open()");
+  }
+
+#+END_SRC

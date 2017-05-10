@@ -1,0 +1,253 @@
+#+TITLE: Parallel projects
+
+* TODO Using
+- pipes
+- shared-mem
+- threads
+
+
+* Sierp :noexport:
+[[file:~/Documents/Workspace/Generative-Art/tst-pgm.cxx]]
+
+
+* Mandelbrot :noexport:
+
+https://gist.githubusercontent.com/pdonadeo/8170764/raw/258d9ec48ee2f676f0104f496c489eb9e64dca19/mandelbrot.c
+
+
+#+BEGIN_SRC c :tangle mandelbrot.c :exports source
+/*
+  This program is an adaptation of the Mandelbrot program
+  from the Programming Rosetta Stone, see
+  http://rosettacode.org/wiki/Mandelbrot_set
+
+  Compile the program with:
+
+  gcc -o mandelbrot -O4 mandelbrot.c
+
+  Usage:
+ 
+  ./mandelbrot <xmin> <xmax> <ymin> <ymax> <maxiter> <xres> <out.ppm>
+
+  Example:
+
+  ./mandelbrot 0.27085 0.27100 0.004640 0.004810 1000 1024 pic.ppm
+
+  The interior of Mandelbrot set is black, the levels are gray.
+  If you have very many levels, the picture is likely going to be quite
+  dark. You can postprocess it to fix the palette. For instance,
+  with ImageMagick you can do (assuming the picture was saved to pic.ppm):
+
+  convert -normalize pic.ppm pic.png
+
+  The resulting pic.png is still gray, but the levels will be nicer. You
+  can also add colors, for instance:
+
+  convert -negate -normalize -fill blue -tint 100 pic.ppm pic.png
+
+  See http://www.imagemagick.org/Usage/color_mods/ for what ImageMagick
+  can do. It can do a lot.
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <stdint.h>
+
+int main(int argc, char* argv[])
+{
+  /* Parse the command line arguments. */
+  if (argc != 8) {
+    printf("Usage:   %s <xmin> <xmax> <ymin> <ymax> <maxiter> <xres> <out.ppm>\n", argv[0]);
+    printf("Example: %s 0.27085 0.27100 0.004640 0.004810 1000 1024 pic.ppm\n", argv[0]);
+    exit(EXIT_FAILURE);
+  }
+
+  /* The window in the plane. */
+  const double xmin = atof(argv[1]);
+  const double xmax = atof(argv[2]);
+  const double ymin = atof(argv[3]);
+  const double ymax = atof(argv[4]);
+
+  /* Maximum number of iterations, at most 65535. */
+  const uint16_t maxiter = (unsigned short)atoi(argv[5]);
+
+  /* Image size, width is given, height is computed. */
+  const int xres = atoi(argv[6]);
+  const int yres = (xres*(ymax-ymin))/(xmax-xmin);
+
+  /* The output file name */
+  const char* filename = argv[7];
+
+  /* Open the file and write the header. */
+  FILE * fp = fopen(filename,"wb");
+  char *comment="# Mandelbrot set";/* comment should start with # */
+
+  /*write ASCII header to the file*/
+  fprintf(fp,
+          "P6\n%s, xmin=%lf, xmax=%lf, ymin=%lf, ymax=%lf, maxiter=%d\n%d\n%d\n%d\n",
+          comment, xmin, xmax, ymin, ymax, maxiter, xres, yres, (maxiter < 256 ? 256 : maxiter));
+
+  /* Precompute pixel width and height. */
+  double dx=(xmax-xmin)/xres;
+  double dy=(ymax-ymin)/yres;
+
+  double x, y; /* Coordinates of the current point in the complex plane. */
+  int i,j; /* Pixel counters */
+  int k; /* Iteration counter */
+  for (j = 0; j < yres; j++) {
+    y = ymax - j * dy;
+    for(i = 0; i < xres; i++) {
+      double u = 0.0 , v= 0.0;/* Coordinates of the iterated point. */
+      double u2 = u * u, v2 = v * v;
+      x = xmin + i * dx;
+      /* iterate the point */
+      for (k = 1; k < maxiter && (u2 + v2 < 4.0); k++) {
+            v = 2 * u * v + y;
+            u = u2 - v2 + x;
+            u2 = u * u;
+            v2 = v * v;
+      };
+      /* compute  pixel color and write it to file */
+      if (k >= maxiter) {
+        /* interior */
+        const unsigned char black[] = {0, 0, 0, 0, 0, 0};
+        fwrite (black, 6, 1, fp);
+      }
+      else {
+        /* exterior */
+        unsigned char color[6];
+        color[0] = k >> 8;
+        color[1] = k & 255;
+        color[2] = k >> 8;
+        color[3] = k & 255;
+        color[4] = k >> 8;
+        color[5] = k & 255;
+        fwrite(color, 6, 1, fp);
+      };
+    }
+  }
+  fclose(fp);
+  return 0;
+}
+
+#+END_SRC
+* Buddhabrot
+https://en.wikipedia.org/wiki/Buddhabrot
+
+#+BEGIN_SRC c :tangle buddhabrot.c
+/*  Copyright © 2011-2013 Henrique Dante de Almeida
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/* buddhabrot: a very small but complete implementation of the Buddhabrot
+   style rendering of Mandelbrot fractals. */
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <stdint.h>
+
+#include <complex.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define S 1024
+static unsigned intensity[3][S*S];
+
+int main (int argc, char *argv[])
+{
+
+
+  const char* filename = argc > 1 ? argv[1] : "default-buddhabrot.ppm";
+
+  /* Open the file and write the header. */
+  FILE * fp = fopen(filename,"wb");
+  char *comment="# Mandelbrot set";/* comment should start with # */
+
+  /*write ASCII header to the file*/
+  fprintf(fp,
+          "P6\n%s, xmin=%lf, xmax=%lf, ymin=%lf, ymax=%lf, maxiter=%d\n%d\n%d\n%d\n",
+          comment, 0., (double)S, 0., (double)S, 255, S, S, 65535);
+
+	float epsilon = 4.0/S;
+	const float factor=4.0f/((float)RAND_MAX+1.0f);
+	float x, y;
+	unsigned jx, jy;
+	unsigned M = 1000000;
+  unsigned M_rgb[3];
+  M_rgb[0]= M;
+  M_rgb[1]= (unsigned) M_rgb[0]/10.;
+  M_rgb[2]= (unsigned) M_rgb[1]/10;
+
+	unsigned m = 100;
+	unsigned R = 150000;
+	unsigned i, j, k;
+	float complex z, c;
+  for (int channel=0; channel != 3; ++channel){
+	for (k = 0; k < R; k++) {
+		x = (float)rand()*factor-2.0f;
+		y = (float)rand()*factor-2.0f;
+		i = 0;
+		c = x + y*I;
+		z = 0;
+		while ((crealf(z)*crealf(z)+cimagf(z)*cimagf(z)) < 4.0f && i < M) {
+			z = z*z + c;
+			i++;
+		}
+		if (i < M_rgb[channel] && i > m) {
+			z = c;
+			for (j = 0; j < i-1; j++) {
+				jx = (crealf(z)+2.0f)/epsilon;
+				jy = (cimagf(z)+2.0f)/epsilon;
+				intensity[channel][jx*S+jy]++;
+				z = z*z + c;
+			}
+		}
+	}
+  }
+  unsigned max[3];
+  for(int channel=0; channel != 3; ++channel){
+	max[channel] = 0;
+	for (i = 0; i < S*S; i++) {
+		if (intensity[channel][i] > max[channel]) max[channel] = intensity[channel][i];
+	}
+  fprintf(stderr,"max[%d]=%d\n", channel, max[channel]);
+  }
+	for (i = 0; i < S*S; i++) {
+    unsigned char color[6];
+    int k = 65535*intensity[0][i]/max[0];
+    color[0] = k >> 8;
+    color[1] = k & 255;
+    k = 65535*intensity[1][i]/max[1];
+    color[2] = k >> 8;
+    color[3] = k & 255;
+    k = 65535*intensity[2][i]/max[2];
+    color[4] = k >> 8;
+    color[5] = k & 255;
+
+    fwrite(color, 6, 1, fp);
+	}
+  fclose(fp);
+	return 0;
+}
+
+
+#+END_SRC
+
+#+BEGIN_SRC shell
+gcc -O4 -march=native -o buddhabrot buddhabrot.c  -lm -Wall
+time ./buddhabrot buddhabrot-c.ppm
+convert -normalize buddhabrot-c.ppm buddhabrot-c.png
+#+END_SRC

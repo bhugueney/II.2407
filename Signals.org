@@ -1,0 +1,142 @@
+#+TITLE: Signals
+
+* Receiving a signal
+#+BEGIN_SRC c :tangle signals.c
+#include <stdio.h>
+#include <unistd.h>
+#include <signal.h>
+
+void generic_handler(int signum){
+  fprintf(stderr, "received signal %d\n sleeping myself !", signum);
+  
+  sleep(20);
+}
+
+int main(int argc, char* argv[]){
+  int sleep_time= 20;
+  for(int i=1; i != 65; ++i){
+    fprintf(stdout, "trying to register handler for signal %d, result is ok ?:%d\n", i, signal(i, generic_handler)!=SIG_ERR);
+  }
+  while(1){
+    fprintf(stdout, "sleeping for %d seconds.\n", sleep_time);
+    int s= sleep(20);
+    if(s){
+      fprintf(stderr, "woke up early because of a signal ! Should have slept for %d more seconds.\n", s);
+    }
+  }
+  return 0;
+}
+#+END_SRC
+* Signaling children
+** Completion ack with signal
+#+BEGIN_SRC c :tangle signals-master-slaves.c
+  #include <stdio.h>
+  #include <unistd.h>
+  #include <signal.h>
+  #include <sys/types.h>
+  #include <limits.h>
+  #include <stdlib.h>
+
+  #define COMM_SIG SIGUSR1
+
+  static int nb_outputs= 4;
+
+  static int work_unit=0;
+
+  void slave_handler(int signum){
+    fprintf(stderr, "process %d received signal %d\n : start printing !\n", (int) getpid(), signum);
+    for(int i=0; i != nb_outputs; ++i){
+    fprintf(stdout,"Work unit %d done by process %d, output %d of %d\n", work_unit, (int) getpid(), i+1, nb_outputs);
+    sleep(1);
+    }
+    fprintf(stderr, "process %d done working, signalling to master %d\n",(int) getpid(), (int) getppid());
+    kill(getppid(), COMM_SIG);
+  }
+  void master_handler(int unused){
+    fprintf(stderr, "master process received completion signal \n");
+  }
+  int main(int argc, char* argv[]){
+    const int nb_slaves= argc >1 ? atoi(argv[1]): 4;
+    pid_t* slaves= malloc(sizeof(pid_t)* nb_slaves);
+    nb_outputs= argc >2 ? atoi(argv[2]): 4;
+    fprintf(stderr, "trying to register slave handler for signal %d, result is ok ?:%d\n", COMM_SIG, signal(COMM_SIG, slave_handler)!=SIG_ERR);
+    pid_t master_pid= getpid();
+    for(int i=0; i != nb_slaves; ++i){
+      ++work_unit;
+      pid_t child_pid= fork();
+      if(child_pid){
+        slaves[i]= child_pid;
+      }else{
+        break;
+      }
+    }
+    if(getpid() == master_pid){
+      fprintf(stderr, "trying to register master handler for signal %d, result is ok ?:%d\n", COMM_SIG, signal(COMM_SIG, master_handler)!=SIG_ERR);
+      for(int i=0; i != nb_slaves; ++i){
+        kill(slaves[i], COMM_SIG);
+        sleep(UINT_MAX);
+      }
+    }else{
+      fprintf(stderr, "process %d working on work unit %d\n", (int)getpid(), work_unit);
+      sleep(UINT_MAX);
+      fprintf(stderr, "process %d done printing result from work unit %d\n", (int)getpid(), work_unit);
+    }
+    return 0;
+  }
+
+#+END_SRC
+
+** Waitpid
+#+BEGIN_SRC c :tangle signals-master-slaves-waitpid.c
+  #include <stdio.h>
+  #include <unistd.h>
+  #include <signal.h>
+  #include <sys/types.h>
+  #include <limits.h>
+  #include <stdlib.h>
+  #include <sys/wait.h>
+
+  #define COMM_SIG SIGUSR1
+
+  static int nb_outputs= 4;
+
+  static int work_unit=0;
+
+  void slave_handler(int signum){
+    fprintf(stderr, "process %d received signal %d\n : start printing !\n", (int) getpid(), signum);
+    for(int i=0; i != nb_outputs; ++i){
+    fprintf(stdout,"Work unit %d done by process %d, output %d of %d\n", work_unit, (int) getpid(), i+1, nb_outputs);
+    sleep(1);
+    }
+  }
+  int main(int argc, char* argv[]){
+    const int nb_slaves= argc >1 ? atoi(argv[1]): 4;
+    pid_t* slaves= malloc(sizeof(pid_t)* nb_slaves);
+    nb_outputs= argc >2 ? atoi(argv[2]): 4;
+    fprintf(stderr, "trying to register slave handler for signal %d, result is ok ?:%d\n", COMM_SIG, signal(COMM_SIG, slave_handler)!=SIG_ERR);
+    pid_t master_pid= getpid();
+    for(int i=0; i != nb_slaves; ++i){
+      ++work_unit;
+      pid_t child_pid= fork();
+      if(child_pid){
+        slaves[i]= child_pid;
+      }else{
+        break;
+      }
+    }
+    if(getpid() == master_pid){
+      for(int i=0; i != nb_slaves; ++i){
+        kill(slaves[i], COMM_SIG);
+        int wstatus=0;
+        pid_t child_pid= waitpid(slaves[i], &wstatus, 0);
+        fprintf(stderr, "master informed of the slave %d 's completion with return code of %d\n", child_pid, wstatus);
+      }
+    }else{
+      fprintf(stderr, "process %d working on work unit %d\n", (int)getpid(), work_unit);
+      sleep(UINT_MAX);
+      fprintf(stderr, "process %d done printing result from work unit %d\n", (int)getpid(), work_unit);
+    }
+    return 0;
+  }
+
+#+END_SRC
