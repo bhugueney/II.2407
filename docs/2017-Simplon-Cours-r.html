@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Programmation en Java : 2</title>
+<meta name="author" content="(bernard hugueney)"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/2.5.0/css/reveal.css"/>
+
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/2.5.0/css/theme/moon.css" id="theme"/>
+
+<link rel="stylesheet" href="./extra.css"/>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/2.5.0/lib/css/zenburn.css"/>
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'http://cdn.jsdelivr.net/reveal.js/2.5.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Programmation en Java : 2</h1><h2 class="author">bernard hugueney</h2><p class="date">Created: 2017-05-17 Wed 01:36</p>
+</section>
+<section id="table-of-contents">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-org579cc4c">Révision &hellip; et plus</a></li>
+<li><a href="#/slide-org0631585">Les objets en Java</a></li>
+<li><a href="#/slide-org3dc8f57">Valeurs et Références</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+
+
+
+<section>
+<section id="slide-org579cc4c">
+<h2 id="org579cc4c">Révision &hellip; et plus</h2>
+<div class="outline-text-2" id="text-org579cc4c">
+</div></section>
+<section id="slide-orgff8d1e3">
+<h3 id="orgff8d1e3">Variables et expressions</h3>
+<ul>
+<li>variables : espace mémoire contenant une valeur d'un certain type auquel on donne un nom
+<ul>
+<li>déclaration (+ initialisation)</li>
+<li>affectation</li>
+<li>utilisation</li>
+
+</ul></li>
+<li>expression arithmétique : valeur "en dur", variable, opérateurs unaires ou binaires sur une ou deux expressions arithmétiques, appel de fonction,</li>
+<li>expression booléenne : sur des valeurs de type <code>boolean</code>, pour les tests (<code>if</code>, <code>for(;;)</code>, <code>while()</code>)</li>
+
+</ul>
+</section>
+<section id="slide-orga3e2039">
+<h3 id="orga3e2039">Tests</h3>
+<ul>
+<li>opérateurs (binaires) de comparaison <code>==</code>, <code>!=</code>, <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code></li>
+<li>opérateurs logiques
+<dl>
+<dt>unaire</dt><dd><code>!</code></dd>
+<dt>binaires</dt><dd><code>&amp;&amp;</code>, <code>||</code>, <code>^</code></dd>
+
+</dl></li>
+
+</ul>
+<p>
+Le résultat est une valeur de type <code>boolean</code> : <code>true</code> / <code>false</code>
+</p>
+</section>
+<section id="slide-org414e5ec">
+<h3 id="org414e5ec">Structures conditionnelles</h3>
+<div class="org-src-container">
+
+<pre><code class="java" >if((un > test)|| !(un <= autre)){
+instructionsSiTestVrai; // expression -> true
+//...
+} else { // bloc else facultatif
+instructionsSiTestFaux;
+//...
+}
+</code></pre>
+</div>
+<ul>
+<li>Ne <b>pas</b> mettre de ';' après le test !</li>
+
+</ul>
+<div class="org-src-container">
+
+<pre><code class="java" >if(!attention);{
+instructionsToujoursExecutees;
+//...
+}
+</code></pre>
+</div>
+<p>
+<code>;</code> est une instruction (vide) légale. Elle sera (faute de bloc ({}) la <b>seule</b> sur laquelle portera le branchement conditionnel.
+</p>
+</section>
+<section id="slide-org59c1b33">
+<h3 id="org59c1b33">Boucles <code>for</code></h3>
+<div class="org-src-container">
+
+<pre><code class="java" >for(i=0; i < 10; ++i){
+//instructions executees 10 fois
+}
+</code></pre>
+</div>
+<p>
+On aurait pu aussi bien utiliser <code>i!=10</code>, car on sort de la boucle lorsque i vaut 10 (donc <code>i&lt;10</code> et <code>i!=10</code> cessent d'être vrai).
+</p>
+<div class="org-src-container">
+
+<pre><code class="java" >for( *initialisation* ; *condition* ; *fin de boucle*){
+
+// instructions à répéter
+
+}
+</code></pre>
+</div>
+<ul>
+<li>initialisation : instruction exécutée avant de rentrer dans la boucle</li>
+<li>condition : expression booléenne qui doit être vraie pour rentrer dans la boucle</li>
+<li>fin de boucle : instruction exécutée à la fin de chaque boucle pour passer à l'itération suivante
+<ul>
+<li><code>i = i+2</code> ou <code>i+=2</code>, <code>i = i-1</code> ou <code>i-=1</code> ou <code>--i</code> ou <code>i--</code></li>
+
+</ul></li>
+
+</ul>
+
+</section>
+<section id="slide-org9949830">
+<h3 id="org9949830">exemples</h3>
+<div class="org-src-container">
+
+<pre><code class="java" >/* on ne fait la boucle que jusqu'a la racine */
+for (i = 2; i * i <= n; i++) {
+    if (n % i == 0) {
+        div = i;
+    }
+}
+</code></pre>
+</div>
+<div class="org-src-container">
+
+<pre><code class="java" >for (i = 3; (i * i <= n) && (n % i != 0); i += 2) {
+    /* rien du tout */
+}
+</code></pre>
+</div>
+</section>
+<section id="slide-org0d779c1">
+<h3 id="org0d779c1">boucles <code>while</code></h3>
+<div class="org-src-container">
+
+<pre><code class="java" >while((un < test) || !(un >= autre)){
+
+instructions;
+
+}
+</code></pre>
+</div>
+
+<p>
+<b>Tant que</b> le test est vrai, on exécute les instructions.
+</p>
+<ul class="org-ul"><li><a id="org9006557"></a>for vs. while<br  /><ul class="org-ul"><li><a id="org121cb58"></a>for<br  /><div class="org-src-container">
+
+<pre><code class="java" >int i;
+for(i= 0; i < 10; ++i){
+    System.out.println(i);
+}
+</code></pre>
+</div></li>
+<li><a id="org368e1ad"></a>while<br  /><div class="org-src-container">
+
+<pre><code class="java" >int i=0;
+while(i < 10) {
+    System.out.println(i);
+    ++i;
+}
+</code></pre>
+</div></li></ul></li></ul>
+</section>
+<section id="slide-org5e2ee09">
+<h3 id="org5e2ee09">initialisationS et incrémentationS dans un for</h3>
+<div class="org-src-container">
+
+<pre><code class="java" >int i, j;
+
+for(i=0 , j=0; (i+j) < 42; ++i , j=j +2){
+
+    //...
+
+}
+</code></pre>
+</div>
+
+</section>
+<section id="slide-org74cf751">
+<h3 id="org74cf751">boucles while</h3>
+<p>
+On peut tester avant ou après l'exécution de la boucle :
+</p>
+<ul class="org-ul"><li><a id="orge09feac"></a>while(){}<br  /><div class="org-src-container">
+
+<pre><code class="java" >while(TEST) {
+    // instructions
+}
+</code></pre>
+</div></li>
+<li><a id="orgb1312bc"></a>do{}while();<br  /><div class="org-src-container">
+
+<pre><code class="java" >do {
+    // instructions
+} while(TEST);
+</code></pre>
+</div></li></ul>
+</section>
+<section id="slide-org5ef0dab">
+<h3 id="org5ef0dab">while vs. do while : exemple</h3>
+<div class="outline-text-3" id="text-org5ef0dab">
+</div><ul class="org-ul"><li><a id="orgef8154d"></a>while<br  /><div class="org-src-container">
+
+<pre><code class="java" >public static void main(String[] args) {
+    int i = 0;
+    while (i != 0) {
+        System.out.println("Hello !");
+    }
+}
+</code></pre>
+</div></li>
+
+<li><a id="orgd07cd38"></a>do while<br  /><div class="org-src-container">
+
+<pre><code class="java" >public static void main(String[] args) {
+    int i = 0;
+    do {
+        System.out.println("Hello !");
+    } while (i != 0);
+}
+</code></pre>
+</div></li></ul>
+
+</section>
+<section id="slide-orgee093c8">
+<h3 id="orgee093c8">while vs. do while : cas pratique</h3>
+<div class="org-src-container">
+
+<pre><code class="java" >public static void main(String[] args) throws IOException {
+
+    char c;
+
+    do {
+        // code du programme ici
+        // qu'on veut executer tant que l'utilisateur le souhaite
+
+        System.out.println("Voulez-vous recommencer O)ui/N)on:  ");
+
+        /* lecture d'un seul caractere, sans Scanner */
+        c = (char) System.in.read();
+        /* sauter le caractere \n */
+        System.in.skip(1);
+    } while (c == 'O');
+}
+</code></pre>
+</div>
+</section>
+<section id="slide-orge77a7e3">
+<h3 id="orge77a7e3">Types</h3>
+<ul>
+<li>primitifs : numériques (entier ou à virgule flottante d'une taille donnée, caractère, booléen)</li>
+<li>tableau : de n'importe quel type (y compris tableau), indice commençant à 0</li>
+<li>classes : (cf. String, Scanner, &hellip;)</li>
+
+</ul>
+
+<p>
+Sauf pour les types primitifs, il faut <b>instancier</b> <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> les valeurs que l'on veut stocker dans les variables.
+On instancie une nouvelle valeur avec <code>new</code> .
+</p>
+
+</section>
+<section id="slide-org64623d5">
+<h3 id="org64623d5">Les tableaux : déclaration</h3>
+<dl>
+<dt>tableau</dt><dd>séquence indexée d'éléments de même type</dd>
+
+<dt>TYPE [ ]</dt><dd>type "tableau d'éléments qui sont de type TYPE"</dd>
+
+</dl>
+<div class="org-src-container">
+
+<pre><code class="java" >int [] tab; // tableau d'elts qui sont de type int
+int [][] tab2D; // tableau d'elts qui sont de type int []
+int [][][] tab3D;//tableau d'elts de type int [][]
+</code></pre>
+</div>
+</section>
+<section id="slide-orgec5be43">
+<h3 id="orgec5be43">Les tableaux : instanciation</h3>
+<ul>
+<li>avec le mot clé <b>new</b> (cf. infra)</li>
+<li>on indique la taille du tableau : nombre d'éléments (l'indice max est ce nombre <b>-1</b>)</li>
+
+</ul>
+
+<div class="org-src-container">
+
+<pre><code class="java" >monTableau= new TYPE[ TAILLE ];
+</code></pre>
+</div>
+
+<ul class="org-ul"><li><a id="orgd7e403a"></a>cas particulier à l'initialisation<br  /><p>
+Si l'on connaît toutes les valeurs à affecter à chaque case du tableau.
+<b>TYPE</b> [] leTableau= {Val<sub>0</sub>, Val<sub>1</sub>, &hellip;, Val<sub>TAILLE-1</sub> };
+</p></li>
+
+<li><a id="orgaabc22d"></a>accès à la case k<br  /><ul>
+<li>leTableau[ <b>k</b> ] est une variable de type <b>TYPE</b></li>
+<li>on doit respecter \(0 \leq k \leq TAILLE-1\)</li>
+
+</ul></li></ul>
+
+</section>
+<section id="slide-orgb875a80">
+<h3 id="orgb875a80">langage informatique régulier</h3>
+<p>
+La régularité des règles (syntaxiques, sémantiques) permet la <b>composition</b>:
+</p>
+<ul class="org-ul"><li><a id="orga62d1a6"></a>déclaration et initialisation de tableaux de tableaux<br  /><div class="org-src-container">
+
+<pre><code class="java" >int[][] tab2D = {{0,1},{1,0}};
+</code></pre>
+</div></li>
+<li><a id="org18d85aa"></a>boucles imbriquées<br  /><div class="org-src-container">
+
+<pre><code class="java" >for(i=0;i<2;i++){
+    for(j=0;j<2;j++){
+        tab2D[i][j] = (i+1)*(j+1);
+    }
+}
+</code></pre>
+</div>
+<p>
+i=0, j=0
+</p>
+
+<p>
+i=0, j=1
+</p>
+
+<p>
+i=0, j= 2 ?
+</p>
+
+<p>
+i=1, j=0
+</p>
+
+<p>
+i=1, j=1,
+</p>
+
+<p>
+i=1, j=2 ?
+</p>
+
+<p>
+i=2 ?
+</p></li></ul>
+</section>
+<section id="slide-orgf6e7024">
+<h3 id="orgf6e7024">Tableau de tableaux</h3>
+<p>
+Chaque case du tableau de tableau ([][]) est un tableau  ([]) qui peut avoir une taille différente de celle des autres.
+</p>
+<div class="org-src-container">
+
+<pre><code class="java" >int[][] tab = new int[3][];
+for(int i=0;i<3;i++){
+    tab[i] = new int[i+2];
+}
+</code></pre>
+</div>
+
+<div class="figure">
+<p><img src="tabtab.png" alt="tabtab.png" />
+</p>
+</div>
+
+</section>
+<section id="slide-org45a9d03">
+<h3 id="org45a9d03">Connaître la taille d'un tableau</h3>
+<p>
+On la connaît déjà ? (à la création -*instanciation*-)
+</p>
+
+<div class="org-src-container">
+
+<pre><code class="java" >public static void main(String[] args){
+// args est un tableau de String
+// mais quelle est sa taille ?
+}
+</code></pre>
+</div>
+
+<p>
+Découpage en fonctions &rarr; le code qui manipule (parcourt) un tableau n'est pas forcément celui qui l'a instancié.
+</p>
+
+<p>
+<b>Attribut</b> <code>length</code>
+</p>
+<div class="org-src-container">
+
+<pre><code class="java" >int[] tab={0,1,2};
+
+System.out.println(tab.length); // 3
+</code></pre>
+</div>
+</section>
+<section id="slide-org6fcdc3f">
+<h3 id="org6fcdc3f">Connaître la taille d'une chaîne de caractères (String)</h3>
+<p>
+utilisation d'une <b>méthode</b> length <b>()</b>
+</p>
+
+<div class="org-src-container">
+
+<pre><code class="java" >String line= sc.nextLine();
+System.out.println(line.length());
+</code></pre>
+</div>
+</section>
+<section id="slide-org0efe246">
+<h3 id="org0efe246">Les fonctions</h3>
+<ul>
+<li>Décomposition d'un programme en sous-parties</li>
+<li>Fonctionnalité <b>bien spécifiée</b> réutilisable (car <i>paramétrée</i> ) du programme</li>
+<li>Chaque fonction a une <b>signature</b> ( <i>interface</i> ) et un corps ( <i>implémentation</i> )</li>
+
+</ul>
+<div class="org-src-container">
+
+<pre><code class="java" >public static TYPE nomFonction(TYP_1 ARG_1, \dots, TY_n ARG_n) { // interface
+//Liste d'instructions ; // corps
+return EXPR;
+}
+</code></pre>
+</div>
+<ul>
+<li>TYPE : le <i>type</i> de l'expression EXPR <b>retournée</b>
+on utilise le type spécial <b>void</b> lorsqu'il n'y a rien à retourner (cf. <code>main</code> ).</li>
+<li>TY<sub>i</sub> ARG<sub>i</sub> : le <i>type</i> et le <i>nom</i> de chacun des <b>arguments</b> (paramètres d'entrée) &rarr; déclaration
+on écrit <code>()</code> lorsqu'il n'y a pas de paramètres.</li>
+
+</ul>
+
+</section>
+<section id="slide-org64d834f">
+<h3 id="org64d834f">Les fonctions : exemple</h3>
+<p>
+Faire une fonction <code>public static int somme(int n)</code> qui calcule \(\sum_{i=1}^n\) .
+</p>
+
+<p>
+<b>La tester !</b>
+</p>
+
+<p>
+Tests &rarr; penser aux cas limites : quel est le domaine de définition des paramètres ?
+</p>
+
+<p>
+Pour une meilleure <b>réutilisabilité</b> on préférera <b>découpler</b> les aspects <b>orthogonaux</b> (i.e. calcul et affichage).
+&rarr; la fonction retourne le résultat au lieu de l'afficher directement.
+</p>
+
+<p>
+Le découpage d'un programme en modules réutilisables est un <b>art</b>.
+</p>
+
+</section>
+<section id="slide-org0b7714d">
+<h3 id="org0b7714d">La portée (scope) des variables 1/3</h3>
+<p>
+Les variables déclarées dans une fonction ne sont pas <i>visibles</i> dans les autres. En fait elles, n'existent qu'au sien du bloc d'accolade dans lequel elles ont été déclarées
+(ou dans l'implémentation de la fonction dont elles sont les arguments).
+</p>
+<div class="org-src-container">
+
+<pre><code class="java" >public static void main(String[] args) {
+    int i = 0;
+    modifie();
+    System.out.println("i vaut " + i);
+    /* explication: c'est pas le meme i */
+}
+public static void modifie() {
+    int i;
+    /* on modifie i */
+    i = 34;
+}
+</code></pre>
+</div>
+
+</section>
+<section id="slide-orgf194992">
+<h3 id="orgf194992">La portée (scope) des variables 2/3</h3>
+<div class="org-src-container">
+
+<pre><code class="java" >public static void main(String[] args) {
+    int n;
+    Scanner sc = new Scanner(System.in);
+    n = sc.nextInt();
+    if (n % 2 == 0) {
+        int i = n;
+        i++;
+    } else {
+        int i = - n;
+        i--;
+    }
+    System.out.println("n vaut: " + n
+                       + " et i vaut: " + i);
+    System.out.println("Et je continue");
+}
+</code></pre>
+</div>
+</section>
+<section id="slide-org14ff47a">
+<h3 id="org14ff47a">La portée (scope) des variables 3/3</h3>
+<div class="org-src-container">
+
+<pre><code class="java" >if (n % 2 == 0) {
+    int i = n;
+    i++;
+} else {
+    int i = - n;
+    i--;
+}
+System.out.println("n vaut: " + n
+                   + " et i vaut: " + i);
+</code></pre>
+</div>
+<pre class="example">
+scope2/Scope2.java:18: error: cannot find symbol
+                           + " et i vaut: " + i);
+                                              ^
+  symbol:   variable i
+  location: class Scope2
+1 error
+</pre>
+</section>
+<section id="slide-org2c43761">
+<h3 id="org2c43761">Partager des variables entre les fonctions ?</h3>
+<p>
+Besoin de variables de <b>classe</b> (<code>static</code>) ou d' <b>instance</b> (cf. infra, après la pause).
+</p>
+</section>
+<section id="slide-orgd6a19d8">
+<h3 id="orgd6a19d8">Règles de programmation</h3>
+<ul>
+<li>commenter</li>
+<li>indenter</li>
+<li>aérer</li>
+<li>passer à la ligne</li>
+<li><b>noms (de variables, fonctions) EXPLICITES</b></li>
+<li>respecter les conventions Java
+<ul>
+<li>[C|c]amelCase
+<ul>
+<li>CamelCase pour les classes / interfaces (cf. infra.)</li>
+<li>camelCase pour les autres noms (fonctions, variables, &hellip;)</li>
+
+</ul></li>
+<li>lettre[lettre|chiffre]*</li>
+
+</ul></li>
+<li>fonctions courtes (cf. <b>découplage</b>)</li>
+<li>faire des <b>classes</b> (?! &rarr; cf. infra.)</li>
+
+</ul>
+</section>
+<section id="slide-org8983265">
+<h3 id="org8983265">Méthodologie</h3>
+<ul>
+<li>Réflexion</li>
+
+</ul>
+
+<div class="figure">
+<p><img src="methodo.png" alt="methodo.png" />
+</p>
+</div>
+
+<ul class="org-ul"><li><a id="orgffac581"></a>Développement Orienté Débugger ???<br  /><p>
+On ne peut <b>PAS</b> faire l'économie de la <b>réflexion</b> !
+</p></li></ul>
+
+</section>
+<section id="slide-org1836fd6">
+<h3 id="org1836fd6">Exemple complet : tri par sélection 1</h3>
+<ul>
+<li>Recherche du minimum &rarr; le mettre au début.</li>
+<li>puis du miniumum des valeurs restantes &rarr; le mettre au début <i>des valeurs restantes</i>.</li>
+<li>&hellip;</li>
+
+</ul>
+
+<p>
+On déplace les éléments d'un tableau par <b>échanges</b>. Trouver le <b>minimum</b> n'est pas une opération élémentaire.
+</p>
+
+<div class="figure">
+<p><img src="tabtri1.png" alt="tabtri1.png" />
+</p>
+</div>
+</section>
+<section id="slide-org8d0ff44">
+<h3 id="org8d0ff44">Exemple complet : tri par sélection 2</h3>
+
+<div class="figure">
+<p><img src="tabtri2.png" alt="tabtri2.png" />
+</p>
+</div>
+
+
+<div class="figure">
+<p><img src="tabtri3.png" alt="tabtri3.png" />
+</p>
+</div>
+
+
+<div class="figure">
+<p><img src="tabtri4.png" alt="tabtri4.png" />
+</p>
+</div>
+
+</section>
+<section id="slide-orgc2fe958">
+<h3 id="orgc2fe958">Tri par sélection :pseudo-code 1/2</h3>
+<pre class="example">
+TRI(TABLEAU d’ENTIER tab) :=
+    ENTIER nb = longueur de tab
+    ENTIER i, indMin
+    POUR i = 0 ... (nb-1)
+    | indMin = indice du minimum de tab[i...(nb - 1)]
+    | échanger tab[i] et tab[indMin]
+    FIN POUR
+</pre>
+</section>
+<section id="slide-org27bc020">
+<h3 id="org27bc020">Tri par sélection :pseudo-code 2/2</h3>
+<pre class="example">
+ENTIER CHERCHERMIN(TABLEAU d’ENTIER tab
+           , ENTIER deb, ENTIER fin) :=
+ENTIER i
+ENTIER indice = deb
+POUR i = deb+1 ... fin
+|  SI (tab[i] &lt; tab[indice])
+|  |  indice = i
+|  FIN SI
+FIN POUR
+RENVOYER indice
+</pre>
+
+</section>
+<section id="slide-org16da160">
+<h3 id="org16da160">Tri par sélection : code 1/2</h3>
+<div class="org-src-container">
+
+<pre><code class="java" >public static void tri(int[] t) {
+    int i, tmp, indMin;
+    int l = t.length;
+    for (i = 0; i < l; i++) {
+        /* plus petit element "suivant" */
+        indMin = indiceMinimum(t, i, l-1);
+        /* echange */
+        tmp = t[indMin];
+        t[indMin] = t[i];
+        t[i] = tmp;
+    }
+}
+</code></pre>
+</div>
+</section>
+<section id="slide-orgde1fba4">
+<h3 id="orgde1fba4">Tri par sélection : code 2/2</h3>
+<div class="org-src-container">
+
+<pre><code class="java" >/* cherche le minimum dans un tableau
+ * ENTRE les indices debut et fin.
+ * Retourne l'INDICE ou il se situe.  */
+public static int indiceMinimum(int[] tab, int debut
+                                , int fin) {
+    int indice = debut;
+    int i;
+    /* optimisation: on commence a debut + 1 */
+    for (i = debut + 1; i <= fin; i++) {
+        if (tab[i] < tab[indice]) {
+            indice = i;
+        }
+    }
+    return indice;
+}
+</code></pre>
+</div>
+</section>
+<section id="slide-org791817d">
+<h3 id="org791817d">Tri par élection : exemple d'utilisation</h3>
+<div class="org-src-container">
+
+<pre><code class="java" >public static void main(String[] args){
+    int tab={ 6, -1, 5, 0, 3};
+    int i;
+    for(i= 0; i != tab.length; ++i){
+        System.out.print(tab[i]);
+    }
+    System.out.println();
+    tri(tab);
+    for(i= 0; i != tab.length; ++i){
+        System.out.print(tab[i]);
+    }
+}
+</code></pre>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org0631585">
+<h2 id="org0631585">Les objets en Java</h2>
+<div class="outline-text-2" id="text-org0631585">
+</div></section>
+<section id="slide-orged89ae2">
+<h3 id="orged89ae2">Les objets</h3>
+<p>
+Comment manipuler de façon cohérente des ensembles de données de tous types ?
+</p>
+<ul>
+<li>pas exemple une paire d'entier (e.g. coordonnées dans un plan)</li>
+
+</ul>
+
+<p>
+&rarr; définir un nouveau <b>type</b> de données définissant les données manipulées et les traitements de celles-ci.
+</p>
+
+<ul class="org-ul"><li><a id="org0f5dac9"></a>Classes<br  /><p>
+Les objets sont des <i>instances</i> de <i>classe</i>.
+</p></li></ul>
+
+</section>
+<section id="slide-org0fdb616">
+<h3 id="org0fdb616">Déclarer une classe</h3>
+<div class="org-src-container">
+
+<pre><code class="java" >class Point {
+    int x;
+    int y;
+}
+</code></pre>
+</div>
+<p>
+<code>x</code> et <code>y</code> sont les <b>attributs</b>.
+</p>
+
+<p>
+<code>Point</code> est le nom de la classe définie.
+</p>
+
+</section>
+<section id="slide-orgdde96d1">
+<h3 id="orgdde96d1">Utiliser les objets</h3>
+<ul>
+<li>Déclaration : <code>Point p;</code> p est un <i>objet</i> de classe Point.</li>
+<li>p a deux attributs <code>x</code> et <code>y</code>
+<ul>
+<li><code>p.x= 3;</code></li>
+<li><code>System.out.println(p.y);</code></li>
+
+</ul></li>
+
+</ul>
+
+<p>
+Remarque : Les tableaux sont des objets avec un attribut <code>length</code> (mais il est <i>immuable</i> &rarr; accessible en lecture seul).
+</p>
+
+</section>
+<section id="slide-org3d083e8">
+<h3 id="org3d083e8">Construire (instancier) un objet : mot-clé new</h3>
+<ul>
+<li>On <i>initialise</i> un objet de manière particulière : on l' <b>instancie</b> <sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup></li>
+<li>avec le mot clé <code>new</code>
+<ul>
+<li>Point p= new Point();</li>
+<li>Scanner sc= new Scanner(System.in);</li>
+
+</ul></li>
+<li><code>Point()</code> et <code>Scanner()</code> sont des constructeurs
+<ul>
+<li>permettent de construire un nouvel objet</li>
+<li>portent le même nom que la classe</li>
+<li>peuvent être paramétrés par des arguments (e.g. <code>System.in</code>)</li>
+<li>sans type de retour</li>
+<li>on peut définir plusieurs constructeurs (<i>surcharge</i>)</li>
+
+</ul></li>
+
+</ul>
+
+<p>
+Si l'on affecte pas d'instance d'objet, la variable vaut <code>null</code>
+</p>
+<ul>
+<li>aucun espace mémoire associé</li>
+<li>aucune utilisation possible Point p= null; p.x= 0; &rarr; <b>ERREUR</b></li>
+
+</ul>
+</section>
+<section id="slide-org10b68b4">
+<h3 id="org10b68b4">Exemples de constructeurs</h3>
+<div class="org-src-container">
+
+<pre><code class="java" >class Point {
+    public int x;
+    public int y;
+    Point () {
+        x = 0;
+        y = 0;
+    }
+    Point (int xInit, int yInit) {
+        x = xInit;
+        y = yInit;
+    }
+}
+</code></pre>
+</div>
+<p>
+Utilisation :
+</p>
+<div class="org-src-container">
+
+<pre><code class="java" >Point p1 = new Point();
+Point p2 = new Point(3,0);
+</code></pre>
+</div>
+
+</section>
+<section id="slide-orgc5bcec4">
+<h3 id="orgc5bcec4">Méthodes</h3>
+<p>
+Terminologie :
+</p>
+<ul>
+<li><code>Scanner</code> est une <i>classe</i>
+<ul>
+<li><code>Scanner sc = new Scanner(System.in);</code></li>
+
+</ul></li>
+<li><code>sc</code> est un <i>objet</i> de type <code>Scanner</code></li>
+<li><code>sc.nextInt()</code> est une fonction appelée sur un objet : c'est une <i>méthode</i>.</li>
+
+</ul>
+
+<p>
+Les classes définissent des <i>attributs</i> (= variables) et des méthodes (= fonctions) associées.
+</p>
+
+<p>
+Pour les méthodes d'instance, celles qui manipulent les attributs des objets (instances), on n'utilise pas le mot clé <code>static</code>.
+</p>
+<div class="org-src-container">
+
+<pre><code class="java" >class Point {
+    //...
+    public void affiche() {
+        System.out.println("x:"+ x +", y:"+y);
+    }
+}
+</code></pre>
+</div>
+</section>
+<section id="slide-orgc9f60a3">
+<h3 id="orgc9f60a3">Les méthodes</h3>
+<p>
+Utilisation :
+</p>
+<div class="org-src-container">
+
+<pre><code class="java" >Point p= new Point(3,10);
+p.affiche();
+</code></pre>
+</div>
+<p>
+Les <i>méthodes</i> peuvent prendre des arguments et retourner une valeur (exactement comme les fonctions, la seule chose qui change dans la <i>signature</i> est l'absence du mot-clé <code>static</code>).
+</p>
+</section>
+<section id="slide-org4dbeaac">
+<h3 id="org4dbeaac">méthodes <code>toString()</code></h3>
+<p>
+Il y a toujours une méthode <code>toString()</code> définie par défaut. C'est celle qui est utilisée pour <i>concaténer</i> avec une chaîne de caractère.
+</p>
+
+<p>
+Par défaut, elle affiche notamment l'adresse de l'objet en mémoire (cf. tentatives d'affichages de tableaux).
+</p>
+
+<p>
+On peut la <b>redéfinir</b>.
+</p>
+
+</section>
+<section id="slide-org5d089db">
+<h3 id="org5d089db">Mot-clé this</h3>
+<p>
+Dans les méthodes (d'instance) et les constructeurs, on peut utiliser le mot-clé <code>this</code> pour désigner l'objet courant.
+</p>
+<div class="org-src-container">
+
+<pre><code class="java" >this.x= 3;
+</code></pre>
+</div>
+
+<p>
+Utile pour désambigüer.
+</p>
+<div class="org-src-container">
+
+<pre><code class="java" >class Point {
+    public int x;
+    public int y;
+
+    Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+</code></pre>
+</div>
+
+</section>
+<section id="slide-org064f8fa">
+<h3 id="org064f8fa">Méthodes et attibuts de classe</h3>
+<ul>
+<li>Certains attributs et méthodes peuvent ne pas être spécifique à chaque instance de la classe: ce sont des attributs/méthodes <b>de classe</b> (par opposition à attributs/méthodes <b>d'instance</b>)</li>
+<li>il sont qualifiés par le mot-clé <code>static</code></li>
+<li>on y accède avec le <code>.</code>, mais pas par un objet mais par le nom de la classe :</li>
+
+</ul>
+<div class="org-src-container">
+
+<pre><code class="java" >Classe.nomChampStatique= valeur;
+Classe.nomMethodeStatique();
+</code></pre>
+</div>
+<ul>
+<li>les méthodes de classe ne peuvent pas utiliser les attributs/méthodes d'instance. (forcément ! De quelle instance ?)</li>
+<li>si l'on veut avoir une <b>constante</b> (immuable), on utilise le mot-clé <code>final</code>.
+<ul>
+<li>convention de nommage : <code>MAJ_ET_UNDERSCORE</code></li>
+
+</ul></li>
+
+</ul>
+</section>
+<section >
+
+<div class="org-src-container">
+
+<pre><code class="java" >public static final int NOMBRE_DE_JOUEURS = 2;
+</code></pre>
+</div>
+
+</section>
+<section id="slide-org9c2b858">
+<h3 id="org9c2b858">Le programme vide initial</h3>
+<div class="org-src-container">
+
+<pre><code class="java" >public class Main {
+    public static void main(String[] args) {
+    }
+}
+</code></pre>
+</div>
+<ul>
+<li><code>main</code> est une méthode de classe (statique). Elle n'est liée à aucune instance en particulier.</li>
+
+</ul>
+</section>
+<section id="slide-org47ca6fd">
+<h3 id="org47ca6fd">Visibilité des attributs / méthodes</h3>
+<p>
+<b>public</b> ?
+</p>
+
+<ul>
+<li>lié à la <i>visibilité</i> des attributs/méthodes d'une classe
+<ul>
+<li>public : accessible par tout le code</li>
+<li>private : accessible en interne seulement, dans la classe elle-même</li>
+<li><a id="org6cdac17"></a>(par défaut) : accessible au niveau du <code>package</code></li>
+<li>protected : accessible par les classes <i>dérivées</i> (cf. plus tard)</li>
+
+</ul></li>
+
+<li>Pourquoi limiter la visibilité ?
+<ul>
+<li>pour assurer la cohérence des données, on veut empêcher le code appelant de pouvoir provoquer des incohérence.
+(liens entre les valeurs des attributs, domaine de définition logique cf.infra heures/minutes)</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org4d8c156">
+<h3 id="org4d8c156">Accesseurs</h3>
+<p>
+Pour chaque attribut <code>private</code>, on <b>peut</b> vouloir permettre l'accès en lecture et/ou en écriture :
+</p>
+<div class="org-src-container">
+
+<pre><code class="java" >class Point {
+    private int x;
+    //...
+    public int getX(){
+        return x;
+    }
+    public void setX(int x) {
+        this.x = x;
+    }
+}
+</code></pre>
+</div>
+<p>
+Encore une <b>convention de nommage</b> !
+</p>
+<ul>
+<li><code>TYPE getXXX()</code></li>
+<li><code>void setXXX(TYPE v)</code></li>
+
+</ul>
+
+</section>
+<section id="slide-orge0e65db">
+<h3 id="orge0e65db">Visibilité de classe</h3>
+<ul>
+<li>Seule la classe principale d'un fichier de code java est <code>public</code>, elle doit porter le même nom (attention à la casse !) que le fichier (sauf l'extension .java).</li>
+<li>D'autre classes peuvent être déclarées publiques dans d'autres fichiers (de même noms que les classes).</li>
+<li>Les classes qui ne sont pas publiques sont <b>internes</b></li>
+
+</ul>
+
+<p>
+La décomposition en classes (comme en fonctions, méthodes) est un art <b>essentiel</b> de la réalisation de tout programme non trivial !
+</p>
+
+<p>
+L'ennemi, c'est la <b>complexité</b> !
+</p>
+
+</section>
+<section id="slide-orgeb0ea22">
+<h3 id="orgeb0ea22">Exemple : une horloge, spécifications</h3>
+<ul>
+<li>Les objets de la classe horloge contiennent des <b>heures et minutes</b>.</li>
+<li>On veut pouvoir <b>avancer/reculer</b> l'horloge.</li>
+<li>On veut assurer que les heures/minutes sont <b>valides</b>
+<ul>
+<li>\(0 \leq h < 24\)</li>
+<li>\(0 \leq m <60\) <sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup></li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org41c2656">
+<h3 id="org41c2656">Exemple : une horloge, code source 1/3</h3>
+<div class="org-src-container">
+
+<pre><code class="java" >public class Horloge {
+    private int minutes;
+    private int heures;
+    Horloge() {
+        this.minutes = 0;
+        this.heures = 0;
+    }
+    Horloge(int h, int m) {
+        this.minutes = m;
+        this.heures = h;
+    }
+    public int getMinute() {
+        return this.minutes;
+    }
+    public int getHeure() {
+        return this.heures;
+    }
+//...
+}
+</code></pre>
+</div>
+</section>
+<section id="slide-orge8ea464">
+<h3 id="orge8ea464">Exemple : une horloge, code source 2/3</h3>
+<div class="org-src-container">
+
+<pre><code class="java" >public class Horloge {
+//...
+    void addHeures(int h) {
+        this.heures = (this.heures + h) % 24;
+    }
+    void addMinutes(int m){
+        this.minutes = this.minutes + m;
+        this.addHeures((this.minutes / 60));
+        this.minutes = this.minutes % 60;
+    }
+//...
+}
+</code></pre>
+</div>
+</section>
+<section id="slide-org1cde974">
+<h3 id="org1cde974">Exemple : une horloge, code source 3/3</h3>
+<div class="org-src-container">
+
+<pre><code class="java" >public class Horloge {
+//...
+    public String toString() {
+        String s = "";
+        if (this.heures < 10) {
+            s = s + "0";
+        }
+        s = s + this.heures + ":";
+        if (this.minutes < 10) {
+            s = s + "0";
+        }
+        s = s + this.minutes;
+        return s ;
+    }
+}
+</code></pre>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org3dc8f57">
+<h2 id="org3dc8f57">Valeurs et Références</h2>
+<div class="outline-text-2" id="text-org3dc8f57">
+</div></section>
+<section id="slide-org4b320d1">
+<h3 id="org4b320d1">un exemple étrange ? 1/3</h3>
+<div class="org-src-container">
+
+<pre><code class="java" >public class Etrange {
+    public static void modifie(int nombre) {
+        nombre = 5;
+    }
+    public static void modifieA(int a) {
+        a = 26;
+    }
+    public static void main(String[] args) {
+        int a = 0;
+        System.out.println("n vaut: " + a);
+        modifie(a);
+        System.out.println("n vaut: " + a);
+        modifieA(a);
+        System.out.println("n vaut: " + a);
+    }
+}
+</code></pre>
+</div>
+</section>
+<section id="slide-orgde3fa6b">
+<h3 id="orgde3fa6b">un exemple étrange ? 2.1/3</h3>
+<div class="org-src-container">
+
+<pre><code class="java" >class Point {
+    public int x;
+    public int y;
+    Point(){
+        this.x = 0;
+        this.y = 0;
+    }
+    public String toString(){
+        return ("(" + x + "," + y + ")");
+    }
+}
+</code></pre>
+</div>
+</section>
+<section id="slide-org8fcd740">
+<h3 id="org8fcd740">un exemple étrange ? 2.2/3</h3>
+<div class="org-src-container">
+
+<pre><code class="java" >//...
+public class Etrange2 {
+
+    public static void modifiePoint(Point monPt) {
+        monPt.x = 3;
+        monPt.y = 4;
+    }
+
+    public static void main(String[] args) {
+        Point p = new Point();
+        System.out.println(p);
+        modifiePoint(p);
+        System.out.println(p);
+    }
+}
+</code></pre>
+</div>
+</section>
+<section id="slide-org53ac94a">
+<h3 id="org53ac94a">un exemple étrange ? 3.2/3</h3>
+<div class="org-src-container">
+
+<pre><code class="java" >//...
+public class Etrange2 {
+
+    public static void modifiePoint(Point monPt) {
+        monPt= new Point(3, 4);
+    }
+
+    public static void main(String[] args) {
+        Point p = new Point();
+        System.out.println(p);
+        modifiePoint(p);
+        System.out.println(p);
+    }
+}
+</code></pre>
+</div>
+
+</section>
+<section id="slide-org2a2441b">
+<h3 id="org2a2441b">Passage d'arguments</h3>
+<p>
+Par <i>valeur</i> (copie) ou par <i>référence</i> (modification de la variable passée en argument elle-même) ?
+</p>
+
+<p>
+Par valeur !
+</p>
+
+<p>
+<b>Mais</b> les variables "objets" sont en fait des <i>références</i> &rarr; on passe par valeur (recopie) une <i>référence</i> !
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="http://cdn.jsdelivr.net/reveal.js/2.5.0/lib/js/head.min.js"></script>
+<script src="http://cdn.jsdelivr.net/reveal.js/2.5.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'h/v',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'http://cdn.jsdelivr.net/reveal.js/2.5.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+]
+});
+</script>
+</body>
+</html>
