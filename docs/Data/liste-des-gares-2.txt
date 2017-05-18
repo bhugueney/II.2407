@@ -1,0 +1,2517 @@
+Clichy-Levallois
+Colombes
+Paris-St-Lazare
+Le Val-d'Argenteuil
+Cormeilles-en-Parisis
+Argenteuil
+Conflans-Ste-Honorine
+Vaux-sur-Seine
+Paris-St-Lazare
+Pontoise
+St-Pierre-du-Vauvray
+Gaillon-Aubevoye
+Pont-Cardinet
+Sotteville
+Rouen-Rive-Droite
+Barentin-Embranchement
+Le Havre-Graville (IE)
+Achères-Grand-Cormier
+Les Clairières-de-Verneuil
+Épône-Mézières
+Rouen-Martainville
+Clères
+St-Aubin-sur-Scie
+Dieppe
+Clères
+Montérolier-Buchy
+Doudeville
+Fécamp
+Petit-Quevilly
+Mézidon
+La Bonneville-sur-Iton
+Romilly-la-Puthenaye
+Gilles-Guainville
+Lison
+Sottevast
+Petit-Couronne
+Grand-Quevilly
+St-Pierre-lès-Elbeuf
+Elbeuf-St-Aubin
+Dives-Cabourg
+Lisieux
+Trouville-Deauville
+Bourth
+St-Germain-St-Rémy
+L'Aigle
+Nonant-le-Pin
+Villepreux-les-Clayes
+Épône-Mézières
+Prey
+Bernay
+Briouze
+Bellou-en-Houlme
+Caen
+Pleudihen
+Dinan
+Corseul-Languenan
+Plancoët
+Sottevast
+La Méaugon
+Jouy
+St-Thégonnec
+Kerhuon
+Chaville-Rive-Gauche
+Vitré
+Les Lacs
+Châteaubourg
+Servon
+L'Hermitage-Mordelles
+Montfort-sur-Meu
+La Chapelle-Anthenaise
+Le Genest
+La Ferté-Bernard
+Champagné
+Conlie
+Crissé
+St-Quentin-en-Yvelines
+La Verrière
+Le Perray
+Rambouillet
+Vendeuvre-Jort
+Massy-TGV
+Pré-en-Pail
+Neuilly-St-Ouen
+Gérard
+St-Germain-sur-Ille
+Boisset (Cantal)
+Montpaon
+Sévérac-le-Château
+Campagnac-St-Geniez
+St-Flour-Chaudes-Aigues
+Ribaute-les-Lieuran
+Bédarieux
+Lunas
+Les Cabrils
+Chirac
+St-Sauveur-de-Peyre
+Bagnols-Chadenet
+Belvezet
+Cahors
+Laissac
+Tournemire-Roquefort
+Colombiers
+Paraire
+Albi-Ville
+Tanus
+Castres (Tarn)
+Tessonnières
+Vigneux-sur-Seine
+Évry
+La Ferté-Alais
+Boutigny
+Montargis
+Le Plessis-Chenet
+Ponthierry-Pringy
+Boissise-le-Roi
+Melun
+Chartrettes
+Vulaines-sur-Seine-Samoreau
+La Grande-Paroisse
+La Chapelle-la-Reine
+Moulins-sur-Allier
+Roanne
+La Fouillouse
+Grand-Croix
+Rive-de-Gier
+Dordives
+Myennes
+La Charité
+Fourchambault
+Nevers
+Sampanges
+Givors-Ville
+Givors-Canal
+Vernaison
+Oullins
+Lyon-Perrache-Marchandises
+Lyon-St-Clair
+Laroche-Migennes
+Cravant-Bazarnes
+Cordesse-Igornay
+Cravant-Bazarnes
+Accolay
+Lucy-sur-Cure-Bessy
+Sermizelles-Vézelay
+Maison-Dieu (Yonne)
+Sougy
+Cercy-la-Tour
+St-Gilles (Saône-et-Loire)
+Corbigny
+Paray-le-Monial
+Moulins-sur-Allier
+Charlieu
+Francheville
+Brignais
+Civrieux-d'Azergues
+La Clayette-Baudemont
+Pont-de-Veyle
+Montrond-les-Bains
+La Tour-de-Salvagny
+Pontcharra-St-Forgeux
+L'Arbresle
+Chazay-Marcilly
+Montbrison
+Andrézieux
+St-Just-sur-Loire
+Clermont-Ferrand
+Pont-du-Château
+Lezoux
+St-Yorre
+Puy-Guillaume
+Vertolaye
+Marsac-en-Livradois
+La Ferté-Hauterive
+St-Pourçain-sur-Sioule
+Gannat
+St-Germain-des-Fossés
+Génolhac
+Ste-Cécile-d'Andorge
+Fons-St-Mamert
+Paulhaguet
+Alleyras
+Aigueperse
+Pontmort
+Clermont-Ferrand
+Sarliève-Cournon
+Sarcelles-St-Brice
+Domont
+Cergy-St-Christophe
+Ermont-Eaubonne
+Ermont-Halte
+Vaucelles
+Bessancourt
+Pont-Petit
+Liancourt-St-Pierre
+Gournay-Ferrières
+Franconville-Plessis-Bouchard
+Montigny-Beauchamp
+Osny
+Chars
+Conflans-Fin-d'Oise
+Thun-le-Paradis
+Juziers
+Issou-Porcheville
+Pont-Cardinet
+Argenteuil
+Éragny-Neuville
+St-Ouen-l'Aumône-Église
+Achères-Ville
+Clichy-Levallois
+Paris-St-Lazare
+Maromme
+Yvetot
+Bréauté-Beuzeville
+Étainhus-St-Romain
+Sartrouville
+Villennes-sur-Seine
+Aubergenville-Élisabethville
+Mantes-la-Jolie
+Le Havre-Graville (IE)
+Pont-de-l'Arche
+Malaunay-Le Houlme
+Barentin-Embranchement
+St-Vaast-Bosville
+Bréauté-Beuzeville
+Rolleville
+Rouen-Rive-Gauche
+Moult-Argences
+Bretteville-Norrey
+Le Molay-Littry
+Beaumont-le-Roger
+Carentan
+Chef-du-Pont-Ste-Mère
+Sotteville
+Bueil
+Serquigny
+Brionne (Eure)
+Glos-Montfort
+Louviers
+Pont-l'Évêque
+Tillières
+Verneuil-sur-Avre
+Dreux
+Ste-Gauburge
+Plaisir-Les Clayes
+Villiers-Neauphle-Pontchartrain
+Montfort-l'Amaury-Mère
+Orgérus-Béhoust
+St-Quentin-en-Yvelines
+Mareil-sur-Mauldre
+Dreux
+Vire
+St-Sever (Calvados)
+Villedieu-les-Poêles
+Clévilliers
+Couliboeuf
+Caen
+Lison
+Plerguer
+Pontorson-Mont-St-Michel
+Carantilly-Marigny
+Coutances
+Avranches
+Plénée-Jugon
+Plestan
+Chartres
+St-Aubin-St-Luperce
+Morlaix
+La Roche
+Meudon
+Breteil
+Montauban-de-Bretagne
+Neau
+Beillant
+Bussac
+Brion-près-Thouet
+St-Varent
+Magny-Blandainville
+Vieuvicq-Montigny
+Brou
+Cubzac-les-Ponts
+La Grave-d'Ambarès-Gare-Inférieur
+Cenon
+Bessé-sur-Braye
+Cinq-Mars
+Montrelais
+Villereversure
+Charix-Lalleyriat
+Châtillon-en-Michaille
+Ceyzériat
+St-Marcel-en-Dombes
+Sathonay-Rillieux
+Anglefort
+Seyssel-Corbonod
+Bellegarde (Ain)
+Longeray-Léaz
+Meximieux-Pérouges
+Leyment
+Paradis
+St-Jean-de-Gonville
+Chevry
+Pitegny
+Viry
+Bossey-Veyrier
+Annemasse
+Perrignier
+Évian-les-Bains
+Genève-Eaux-Vives
+Annemasse
+Viaduc-Ste-Marie
+Les Houches
+Chedde-Voie-Étroite
+Le Châtelard-Frontière
+Marcellaz-Hauteville
+Groisy-Thorens-la-Caille
+Frontenex
+Pomblière-St-Marcel
+Chindrieux
+Aix-les-Bains-Le Revard
+St-Pierre-d'Albigny
+Épierre-St-Léger
+Modane-Berchette
+La Praz
+La Bridoire
+Aix-en-Provence
+Simiane
+St-Antoine (MR)
+Aspres-sur-Buëch
+Voreppe
+Vif
+St-Quentin-Fallavier
+La Tour-du-Pin
+St-André-le-Gaz
+Beaurepaire
+Valence-TGV
+Alixan-Châteauneuf-d'Isère
+Romans-Bourg-de-Péage
+St-Hilaire-St-Nazaire
+Tullins-Fures
+Moirans
+Le Cheylas-La Buissière
+Pontcharra-sur-Breda-Allevard
+Grenoble-Université-Gières
+Allex-Grane
+Chorges
+Savines
+Embrun
+Château-Arnoux-St-Auban
+Sorgues-Châteauneuf-du-Pape
+Théoule-sur-Mer
+Villeneuve-Loubet-Plage
+Hippodrome-de-la-Côte-d'Azur
+Cap-d'Ail
+Cassis
+La Barasse
+Carnoules
+Gonfaron
+Les Arcs-Draguignan
+Fréjus
+St-Raphaël-Valescure
+Agay
+Cuers-Pierrefeu
+Istres
+Fos-sur-Mer
+Carry-le-Rouet
+Niolon
+Port-St-Louis-du-Rhône
+Marseille-Blancarde
+Marseille-Prado
+Marseille-Maritime-Arenc
+L'Estaque
+La Motte-Ste-Rosseline
+Grasse
+Halte de Fontanil-Lycée Drap
+Sospel
+La Trinité-Victor
+Paris-La Chapelle-Évangile
+Verneuil-l'Étang
+Sucy-Bonneuil
+Remise-à-Jorelle
+Pavillons-sous-Bois
+Aulnay-sous-Bois
+Les Grésillons
+Avenue-Henri-Martin
+Avenue-Foch
+Ermont-Eaubonne
+Les Abrets-Fitilieu
+St-Cassin-la-Cascade
+Mison
+Sisteron
+Château-Arnoux-St-Auban
+Peyruis-Les Mées
+La Brillanne-Oraison
+Ste-Marthe-en-Provence
+Cessieu
+Beaucroissant
+Vénissieux-Voyageurs
+Pertuis
+Givors-Canal
+Valence
+St-Paul-lès-Romans
+St-Marcel-lès-Valence
+St-Marcellin (Isère)
+Vinay
+Die
+Mallemoisson
+Pertuis
+Orgon
+Gadagne
+Avignon-Fontcouverte
+L'Isle-Fontaine-de-Vaucluse
+Cavaillon (MIN)
+Montfavet
+Monteux
+Menton-Garavan
+Aubagne
+Marseille-Blancarde
+La Ciotat
+Boulouris-sur-Mer
+Le Trayas
+Ollioules-Sanary-sur-Mer
+Martigues
+La Couronne-Carro
+La Redonne-Ensuès
+Caronte-la-Gafette
+Fos-Viguerat
+Fos-Graveleau
+Marseille-St-Charles
+Les Arcs-Draguignan
+Ranguin
+L'Escarène
+Drap-Cantaron
+Viévola
+Tende
+Vintimille
+Trets
+Gardanne
+Brignoles
+Paris-Bercy-Rapée
+Neuilly-sur-Marne
+Les Coquetiers
+Lycée-Henri-Sellier
+L'Abbaye
+Villetaneuse-Université TT
+Pierrefite-Stains TT
+Avenue-du-Président-Kennedy-Radio
+Neuilly-Porte-Maillot
+Sèvres-Ville-d'Avray
+Bécon-les-Bruyères
+La Défense
+La Celle-St-Cloud
+St-Nom-la-Bretêche-Forêt-de-Marly
+Rueil-Malmaison
+Les Vallées
+Houilles-Carrières-sur-Seine
+Pont-de-l'Alma
+Versailles-Rive-Gauche
+Musée-d'Orsay
+Choisy-le-Roi
+Igny
+Bièvres
+Stains
+La Varenne-Chennevières
+Sucy-Bonneuil
+Noisy-le-Roi
+Poissy-Grande-Ceinture
+St-Cyr-Grande-Ceinture
+Vizzavona
+L'Arinella
+Calvi
+Palasca
+Valenciennes
+St-Amand-les-Eaux
+Maulde-Mortagne
+Aubigny-au-Bac
+Flavy-le-Martel
+Ham (Somme)
+Orchies
+Hirson-Écoles
+Fretin (Nord)
+Ennevelin
+Avesnelles
+Orchies
+Genech
+Roubaix-Wattrelos
+Baisieux
+Combourg
+Étriché-Châteauneuf
+St-Sylvain-Briollay
+Noyen
+Doulon
+Nantes-État
+Mesgrigny-Méry
+Barberey-St-Sulpice
+Montiéramey
+Bar-sur-Aube
+Foulain
+Langres
+Montreux-Vieux
+Tagolsheim
+Zillisheim
+Flaxlanden
+Rosa Parks
+Émerainville-Pontault-Combault
+Ozoir-la-Ferrière
+Gretz-Armainvilliers
+Rosny-Bois-Perrier
+Bas-Évette
+Esternay
+Gretz-Armainvilliers
+Marles-en-Brie
+Mortcerf
+Faremoutiers-Pommeuse
+Léchelle (Seine-et-Marne)
+Longueville (Seine-et-Marne)
+Provins
+Estissac
+Arcis-sur-Aube
+Coolus
+Fère-Champenoise
+Vertus
+Morains-le-Petit
+Besançon-Franche-Comté-TGV
+Belfort-Montbéliard-TGV
+St-Dizier
+St-Dizier
+Bayard
+Froncles-Buxières
+Ancerville-Guë
+Bologne
+Manois
+Neufchâteau
+Laneuville-St-Joire
+Ligny
+Andilly
+Lamarche
+Contrexéville
+Maron
+Jarville-la-Malgrange
+Pierreville
+Praye-sous-Vaudémont
+Thaon
+Épinal
+Bruyères (Vosges)
+Laveline-devant-Bruyères
+St-Dié
+Laveline-devant-Bruyères
+St-Léonard (Vosges)
+Bruyères (Vosges)
+Lunéville
+St-Dié
+Nogent-l'Artaud-Charly
+Château-Thierry
+Dettwiller
+Mommenheim
+Epernay
+Jalons-les-Vignes
+Vitry-le-François
+Foug
+Nancy-Ville
+Laneuveville-devant-Nancy
+Lérouville
+Couilly-St-Germain
+Mont-Notre-Dame
+Bazoches
+Neuilly-St-Front
+Epernay
+Ay
+Montbré
+Reims-Franchet-d'Esperey
+Aulnay-sous-Bois
+Sevran-Beaudottes
+Champigneulles
+Châlons-en-Champagne
+St-Hilaire-au-Temple
+Bouy
+Mourmelon-le-Petit
+St-Erme
+Coucy-lès-Eppes
+St-Hilaire-au-Temple
+Auboué
+Homécourt
+Verdun
+Étain
+Gandrange-Amnéville
+Lérouville
+Le Breuil-sur-Couze
+St-Just-St-Rambert
+Bas-Monistrol
+Le Puy-en-Velay
+La Ricamarie
+St-Étienne-Le Clapier
+St-Étienne-Carnot
+Peyraud
+Tournon
+Cruas
+St-Montant
+Remoulins-Pont-du-Gard
+Givors-Canal
+St-Julien-les-Fumades
+Alès
+Uchaud
+Vergèze-Codognan
+Beaucaire-Marchandises
+Iwuy
+Bavay
+Prouvy-Thiant
+Douzies
+Denain
+St-Amand-les-Eaux
+Fressies
+Roye (Somme)
+Péronne-la-Chapelette
+Laon
+Villers-Bretonneux
+Rosières
+Chaulnes
+Valenciennes
+Onnaing
+Fourmies
+Orchies
+Aulnoye-Aymeries
+Roncq
+Douai
+Seclin
+Paris-Nord-Surface
+Achiet
+Boisleux
+Pierrefitte-Stains
+St-Denis
+Dommartin-Remiencourt
+Daours
+Arras-Meaulens
+Croix-l'Allumette
+Roubaix
+Coron-de-Méricourt
+Billy-Montigny
+Bauvin-Provin
+Pont-à-Vendin
+Lille-Flandres
+Santes
+La Fontaine-Nord
+Lille-Porte-de-Douai
+Cuinchy
+Beuvry (Pas-de-Calais)
+Lapugnoy
+Pernes-Camblain
+Pérenchies
+Armentières
+St-André (Nord)
+Ste-Marguerite
+Steenbecque
+Esquelbecq
+Bergues
+Béthune
+Chocques
+Dunkerque
+Bourbourg
+Beau-Marais
+Bertangles-Poulainville
+Mont-St-Éloi
+Savy-Berlette
+Tincques
+Beaurainville
+Desvres
+Hesdigneul
+Wizernes
+Rang-du-Fliers-Verton
+Hesdigneul
+Amiens
+Longpré-les-Corps-Saints
+Noyelles
+Rue
+Seugy
+Balagny-St-Épin
+Soissons
+Bresles
+Clermont-de-l'Oise
+Rethondes
+Lamotte-Breuil
+Abancourt
+St-Martin-du-Vivier
+Sommery
+Ste-Segrée
+Chepy-Valines
+Noyelles
+Angers-St-Laud
+Ingrandes-sur-Loire
+Pornichet
+Le Croisic
+Nantes
+Doulon
+Sucé-sur-Erdre
+Nort-sur-Erdre
+Loudun
+Coulon
+Mauléon-St-Aubin
+La Possonnière
+Trémentines
+Neuville-de-Poitou
+Rivarennes-Quinçay
+La Chaize-le-Vicomte
+Olonne-sur-Mer
+Arçay
+Beuxes
+St-Christophe-du-Bois
+Fontenay-le-Comte
+Fontenay-le-Comte
+Marans
+Châtelaillon
+Rochefort
+Tonnay-Charente
+Taillebourg
+La Haie-Fouassière
+Gorges
+La Roche-sur-Yon
+Bouaye
+Machecoul
+Challans
+St-Hilaire-de-Riez
+Bourgneuf-en-Retz
+La Rochelle-Ville
+Rouillé
+La Rochelle-Porte-Dauphine
+Égly
+Châteaudun
+Crotelles
+Oisème
+Beaulieu-Le Coudray
+Civry-St-Cloud
+Château-du-Loir
+Tours
+Ruffec (Charente)
+Angoulême
+Angerville
+Toury
+Coutras
+Cenon
+Monts (Indre-et-Loire)
+Maillé
+Onzain
+Bibliothèque-François-Mitterrand
+Villeneuve-le-Roi
+Ablon
+Vitry-sur-Seine
+St-Ustre
+Châtellerault
+Grand-Pont-Preuilly
+Couhé-Vérac
+St-Saviol
+Chinon
+Nouatre-Maillé
+Port-de-Piles
+Loudun
+Le Bouchet
+Aiffres
+Sireuil
+St-Michel-sur-Charente
+Ludon
+Moulis-Listrac
+Bruges
+Ravezies
+Arlac
+Limoges-Bénédictins
+Magnac-Vicq
+Reuilly (Indre)
+Ste-Lizaigne
+Issoudun
+Neuvy-Pailloux
+Châteauroux
+Luant
+Celon
+Lamotte-Beuvron
+Gignac-Cressensac
+Gourdon
+St-Denis-Catus
+Albias
+Chenonceaux-Chisseaux
+Chissay-en-Touraine
+Palluau-St-Genou
+Veigné
+Esvres
+Courçay-Tauxigny
+Abilly
+La Gauterie
+Selles-St-Denis
+Pont-Cardinet
+St-Cloud
+Pont-Cardinet
+Viroflay-Rive-Droite
+Versailles-Rive-Droite
+Garches-Marnes-la-Coquette
+Clichy-Levallois
+Nanterre-Préfecture
+Meudon-Val-Fleury
+Champ-de-Mars-Tour-Eiffel
+Javel
+Pont-du-Garigliano Hôpital-George
+Porchefontaine
+Wissous
+Chemin-d'Antony
+Orangis-Bois-de-l'Épine
+Gravigny-Balizy
+Bobigny
+Le Plant-Champigny
+Versailles-Chantiers
+Petit-Jouy-Les Loges
+Mareil-Marly
+St-Germain-Grande-Ceinture
+Versailles-Matelots
+Tavera
+Carbuccia
+Mezzana
+Lupino
+Ponte-Leccia
+La Rocade
+Furiani
+Venaco
+L'Île-Rousse
+Lure
+Altkirch
+Grandpuits
+Nangis
+Longueville (Seine-et-Marne)
+Petit-Croix
+Magenta
+Jouy-sur-Morin-Le Marais
+La Ferté-Gaucher
+Champbenoist-Poigny
+Champagne-Ardenne-TGV
+Mailly-le-Camp
+Bussy-Lettrée-Vatry
+Sommesous
+Villeneuve-l'Archevêque
+Vitry-le-François
+Dienville
+Joinville (Haute-Marne)
+Fronville-St-Urbain
+Donjeux
+Vraincourt-Viéville
+Bologne
+Blesme-Haussignemont
+Rimaucourt
+St-Germain-sur-Meuse
+Pagny-sur-Meuse
+Liffol-le-Grand
+Hymont-Mattaincourt
+Barisey-la-Côte
+Langres
+Vittel
+Toul
+Neuves-Maisons
+Rosières-aux-Salines
+Pont-St-Vincent
+Ludres
+Messein
+Mirecourt
+Lure
+Xertigny
+Vitrey-Vernois
+Fougerolles
+Aillevillers
+Giromagny
+Port-d'Atelier-Amance
+Arches
+Pouxeux
+Arches
+Biffontaine
+St-Léonard (Vosges)
+Saulcy
+Gérardmer
+Baccarat
+Raon-l'Étape
+Wilwisheim
+Vendenheim
+Mundolsheim
+Dormans
+Loisy-sur-Marne
+Fontenoy-sur-Moselle
+Liverdun
+Frouard
+Champigneulles
+Blainville-Damelevières
+Mont-sur-Meurthe
+Lunéville
+Bar-le-Duc
+Ostricourt
+Phalempin
+Lille-Champ-de-Mars
+Lille-Flandres
+Creil
+Laigneville
+Liancourt-Rantigny
+Paris-Nord
+Paris-La Chapelle
+Courcelles-le-Comte
+Biache-St-Vaast
+Stade-de-France-St-Denis
+Ailly-sur-Noye
+Goussainville
+Les Noues
+Pont-de-la-Deule
+Arras
+Ostricourt
+Lens
+Bauvin-Provin
+Marquillies
+Loos-les-Lille
+Calonne-Ricouart
+Sequedin
+Lille-Délivrance
+Ennetières-en-Weppes
+Armentières
+Isbergues
+Wardrecques
+Bailleul (Nord)
+Strazeele
+Hazebrouck
+St-Omer (Pas-de-Calais)
+Ruminghem
+Audruicq
+Nortkerque
+Marquette
+Leffrinckoucke
+Thiennes
+Coudekerque-Branche
+Dunkerque
+Avion
+Liévin
+Lillers
+Dunkerque-Maritime-Mardyck
+Marck
+Les Fontinettes
+Arras
+Frévin-Capelle
+St-Pol-sur-Ternoise
+Brimeux
+Montreuil-sur-Mer
+Attin-Garage
+Wavrans
+Hersin-Coupigny
+Bruay-en-Artois
+Lumbres
+Pont-Remy
+Abbeville
+Boulogne-Maritime
+Boulogne-Tintelleries
+Marquise-Rinxent
+Fréthun-lès-Calais
+Calais-Maritime
+Montsoult-Maffliers
+Cramoisy
+Heilles-Mouchy
+Soissons
+Avrigny
+Bailleul-sur-Thérain
+Breteuil-Embranchement
+Longroy-Gamaches
+Abbeville
+Acheux-Franleu
+Feuquerolles
+Woincourt
+Abancourt
+Fontaine-Lavaganne
+Abancourt
+Esches
+Laboissière-le-Déluge
+Beauvais
+Milly-sur-Thérain
+Eu-la-Mouillette
+Eu
+Nointel-Mours
+Neuville-Université
+Creil
+Persan-Beaumont
+Gisors
+La Villetertre
+Dieppe
+Champ-de-Courses-d'Enghien
+Cernay (Val-d'Oise)
+St-Ouen-l'Aumône
+Pontoise
+Us
+La Chapelle-aux-Pots
+St-Paul-de-l'Oise
+Herblay
+Metz-n° 2
+Metz-Ville
+Pompey
+Longuyon
+Sarrebourg
+Gresswiller
+Lutzelhouse
+Holtzheim
+Sélestat
+Molsheim
+Dambach-la-Ville
+Fegersheim-Lipsheim
+Matzenheim
+Lutterbach (Haut-Rhin)
+Rouffach
+Bollwiller
+Wittelsheim
+Munster-Badischhof
+Luttenbach-près-Munster
+Muhlbach-sur-Munster
+Soultz (Haut-Rhin)
+Guebwiller
+Colmar
+Lutterbach (Haut-Rhin)
+Vieux-Thann
+Thann
+Willer-sur-Thur
+Kruth
+Graffenstaden
+Bénestroff
+Kilstett
+Marienthal
+Walbourg
+Walbourg
+Reichshoffen-Usines
+Niederbronn-les-Bains
+Schweighouse-sur-Moder
+Hargarten-Falck
+Petit-Réderching
+Rohrbach-lès-Bitche
+Hundling
+Mommenheim
+Kalhausen
+Brouviller-Lixheim
+Herbitzheim
+Kalhausen
+Rémilly
+Courcelles-sur-Nied
+Hargarten-Falck
+Anzeling
+Hargarten-Falck
+Bouzonville
+Anzeling
+Kuntzig
+Basse-Ham
+Metz-Nord
+Walibi-Lorraine
+Fontoy
+Audun-le-Tiche
+Lumes
+Margut-Fromy
+Audun-le-Roman
+Nouzonville
+Joigny-sur-Meuse
+Bogny-sur-Meuse
+Laifour
+Haybes
+Fépin
+Givet
+Le Châtelet
+Jonchery-sur-Vesle
+Challerange
+Bazancourt
+Bétheniville
+Challerange
+Alland'huy
+Liart
+Carignan
+Messempré
+Lille-Europe
+Baroncourt
+Tournes
+Laon
+Marle-sur-Serre
+Vervins
+Origny-en-Thiérache
+Vaumoise
+Anor
+Le Plessis-Belleville
+Le Bourget
+Tricot
+Boves
+Rethondes
+Aulnois-sous-Laon
+La Ferté-Chevresis
+Viry-Noureuil
+Bohain
+Aulnoye-Aymeries
+Louvroil
+Appilly
+Feuquières-Broquiers
+Moliens
+St-Omer-en-Chaussée
+Bouffemont-Moisselles
+St-Leu-la-Forêt
+St-Leu-d'Esserent
+Le Petit-Thérain
+Arques-la-Bataille
+Rouxmesnil
+Épinay-Villetaneuse
+La Barre-Ormesson
+Pierrelaye
+St-Ouen-l'Aumône-Liesse
+Beauvais
+Asnières-sur-Seine
+Bois-Colombes
+Pont-Cardinet
+Chanteloup-les-Vignes
+Meulan-Hardricourt
+Gargenville
+Le Stade
+Sannois
+Conflans-Ste-Honorine
+Gisors
+Val-de-Reuil
+Vernon-Giverny
+La Garenne-Colombes
+St-Étienne-du-Rouvray
+Malaunay-Le Houlme
+Foucart-Alvimare
+Harfleur
+Maisons-Laffitte
+Les Mureaux
+Port-Villez
+Charleval
+Auffay
+Longueville-sur-Scie
+St-Ouen-du-Breuil
+Motteville
+St-Valéry-en-Caux
+Grainville-Ymauville
+Harfleur-Halte
+Lisieux
+Bayeux
+Évreux-Embranchement
+Conches
+Serquigny
+Bernay
+Oissel
+Pont-Audemer
+Honfleur
+Mézidon
+Dives-sur-Mer-Port-Guillaume
+Houlgate
+Villers-sur-Mer
+Le Grand-Jardin
+Nonancourt
+Marchezais-Broué
+St-Cyr
+Plaisir-Grignon
+Garancières-la-Queue
+Maule
+Granville
+Écouché
+Theuvy-Achères
+Bailleau-l'Évêque
+St-Lô
+Broons
+Châtelaudren-Plouagat
+Plounérin
+Nogent-le-Rotrou
+Maintenon
+Amilly-Ouerray
+Noyal-Acigné
+Voutré
+Louverné
+Laval
+Port-Brillet
+Le Theil-La Rouge
+Sceaux-Boësse
+Le Mans
+La Milesse-La Bazoge
+Rouessé-Vassé
+Versailles-Chantiers
+Trappes-Marchandises
+Les Essarts-le-Roi
+La Loupe
+Sillé-le-Guillaume
+Alençon
+La Guierche
+La Hutte-Coulombiers
+Neuville-sur-Sarthe
+Auneau
+La Lacelle
+Briouze
+Vitré
+Pontchaillou
+Montreuil-sur-Ille
+Le Légué
+Morannes
+Gièvres
+Lussac-les-Châteaux
+Lathus
+Peyrilhac-St-Jouvent
+Limoges-Bénédictins
+Roumazières-Loubert
+Roumazières-Loubert
+Limoges-Montjovis
+La Rivière-de-Mansac
+La Cave
+Périgueux-St-Georges
+St-Pierre-de-Chignac
+Vélines
+St-Antoine-de-Breuilh
+Couze
+Le Buisson
+St-Émilion
+Les Eyzies
+Siorac-en-Périgord
+St-Front-sur-Lémance
+Penne (Lot-et-Garonne)
+Monsempron-Libos
+Fumel
+Penne (Lot-et-Garonne)
+Trèbes
+St-Médard-d'Eyrans
+Bègles
+St-Macaire
+Castelnau-d'Estrétefonds
+Route-de-Launaguet
+Escalquens
+Avignonet
+Béziers
+Agde
+Port-Ste-Marie
+St-Nicolas-St-Romain
+Lamagistère
+Moissac
+Castelsarrasin
+Marmande
+Nogaro
+Riscle
+Port-Ste-Marie
+Nérac
+Lasserre
+Condom
+Auch
+Aubiet
+St-Agne
+St-Cyprien-Arènes
+Castelsarrasin
+Muret
+St-Agne
+Martres-Tolosane
+Lestelle
+Labarthe-Inard
+St-Gaudens
+Tournay (Hautes-Pyrénées)
+Montsûrs
+Condé-sur-Huisne
+Paris-Montparnasse
+Paris-Vaugirard
+Connerré-Beillé
+Montfort-le-Gesnois
+St-Cyr
+Trappes-Voyageurs
+Prey
+L'Aigle
+Couliboeuf
+St-Pierre-sur-Dives
+Mézidon
+Teillé (Sarthe)
+La Selle-en-Luitré
+Betton
+St-Médard-sur-Ille
+La Fresnais
+St-Malo
+La Brohinière
+Plouaret
+Le Porage
+Sablé
+Château-Gontier
+Redon
+Beslé
+Quéménéven
+Pont-de-Buis
+Dirinon
+Pontchâteau
+Auray
+Gaël
+Les Sables-Blancs
+St-Pierre-Quiberon
+Pontivy
+Ploeuc-L'Hermitage
+Uzel
+La Motte
+La Boissière
+Le Pénity
+Guingamp
+Brélidy-Plouëc
+Arzviller
+Meaux
+Trilport
+Nanteuil-Saâcy
+Chenay-Gagny
+Noisy-le-Sec
+Strasbourg-Cronenbourg
+Esbly
+Montry-Condé
+Villiers-Montbarbin
+Rilly-la-Montagne
+Trois-Puits
+Reims
+Parc-des-Expositions
+Courcy-Brimont
+Buzy (Meuse)
+Moyeuvre-Grande
+Rombas-Clouange
+Mouzon
+Ancemont
+Verdun
+Consenvoye
+Rambucourt-Bouconville
+Ancy-sur-Moselle
+Frouard
+Belleville
+Dieulouard
+Vandières
+Conflans-Jarny
+Bénestroff
+Augny
+Dachstein
+Strasbourg-Roethig
+Wisches
+Lingolsheim
+Lesseux-Frapelle
+Strasbourg-Koenigshoffen
+Barr
+Strasbourg-Ville
+Sélestat
+Graffenstaden
+Geispolsheim
+Mulhouse-Dornach
+Habsheim
+Merxheim
+Richwiller
+Colmar
+Munster
+Breitenbach-Haut-Rhin
+Ingersheim-Cité-Scolaire
+Neuf-Brisach
+Oberhergheim
+Réguisheim
+Ensisheim
+Ste-Croix-en-Plaine
+Blodelsheim
+Oderen
+Cernay (Haut-Rhin)
+Altkirch
+Huningue
+Morhange
+Baudrecourt
+La Wantzenau
+Gambsheim
+Drusenheim
+Sessenheim
+Beinheim-Embranchement
+Soultz-sous-Forêts
+Haguenau
+Bitche-Camp
+Bitche
+Woelfling-lès-Sarreguemines
+Sarreguemines-Est
+Obermodern
+Wingen-sur-Moder
+Schopperten
+Berthelming
+Folpersviller
+Faulquemont
+Teting
+Cocheren
+Yutz
+Sierck-les-Bains
+Bettembourg
+Metz-Chambière
+Hagondange
+Uckange
+Audun-le-Tiche
+Metz-devant-les-Ponts
+Hayange
+Mont-St-Martin
+Nouvion-sur-Meuse
+Vrigne-Meuse
+Fontoy
+Bazoches
+Anchamps
+Magneux-Courlandon
+Muizon
+Amagne-Lucquy
+Attigny (Ardennes)
+Maurecourt
+Limay
+Mantes-la-Jolie
+Clichy-Levallois
+Ermont-Eaubonne (PSL)
+Éragny-Neuville
+Pont-de-l'Arche
+Asnières-sur-Seine
+Paris-Batignolles
+Oissel
+Pavilly-Station
+Motteville
+Bolbec-Nointot
+Poissy
+Bonnières
+Le Havre-Maritime
+Étrépagny
+Saussay-Écouis
+Pont-St-Pierre
+Forges-les-Eaux
+Rouxmesnil
+Eu
+Jacques-Monod-La Demi-Lieue
+Montivilliers
+Rouen-Orléans
+Frénouville-Cagny
+Caen
+Cherbourg
+Bréval
+Elbeuf-Ville
+Tourville
+Évreux-Embranchement
+Blonville-sur-Mer-Benerville
+Rai-Aube
+Le Merlerault
+Houdan
+St-André-de-l'Eure
+St-Aubin-du-Vieil-Évreux
+Folligny
+Aunay-Tréon
+Garnay
+Condé-sur-Vire
+La Hisse
+Landébia
+Miniac
+Pont-Hébert
+St-Lô
+Cérences
+Folligny
+Caulnes
+Lamballe
+Yffiniac
+Plouvara-Plerneuf
+Pontgouin
+St-Piat
+Landivisiau
+Landerneau
+Brest
+Vanves-Malakoff
+Clamart
+Sèvres-Rive-Gauche
+Rennes
+La Brohinière
+Quédillac
+Trégonneau-Squiffiec
+Aiffres
+Bailleau-le-Pin
+Arrou
+Lucé
+Gauriaguet
+St-André-de-Cubzac
+Nantilly-Saumur
+Montreuil-Bellay
+Longué
+St-Patrice
+Varades-St-Florent-le-Vieil
+Mauves-sur-Loire
+Nantes
+Chantenay
+St-Nazaire
+Les Rosiers-sur-Loire
+La Baule-Escoublac
+Montreuil-Belfroi
+Chemillé
+Ayron-Latillé
+Chalandray
+Cerizay
+Luché
+La Mothe-Achard
+Torfou
+St-Martin-de-Fraigneau
+Dompierre-sur-Mer
+Aytré-Plage
+St-Savinien-sur-Charente
+Saintes
+Montaigu-Vendée
+Belleville-Vendée
+Champ-St-Père
+Nantes-État
+Rezé-Pont-Rousseau
+Longueil-Ste-Marie
+Le Meux-la-Croix-St-Ouen
+Jaux
+Thourotte
+Quévy
+Cattenières
+Cambrai-Annexe
+Messac-Guipry
+Vern
+Quimperlé
+Hanvec
+Questembert
+Ste-Anne
+St-Méen
+Auray
+Belz-Ploemel
+Quintin
+Loudéac
+Pont-Melvez
+Callac
+Carhaix
+Traou-Nez
+Loulay
+St-Jean-d'Angély
+Saintes
+Jonzac
+Airvault-Gare
+Parthenay
+Mazières-Verruyes
+Champdeniers-St-Christophe
+Prissé-la-Charrière
+Illiers-Combray
+La Taye
+Ste-Eulalie-Carbon-Blanc
+Saumur-Rive-Droite
+Bazouges
+St-Genouph
+Port-Boulet
+Ste-Luce
+St-Étienne-de-Montluc
+Cordemais
+Savenay
+Penhoët
+St-Mathurin
+La Bohalle
+La Pointe-Bouchemaine
+La Possonnière
+Babinière
+La Chapelle-sur-Erdre
+Nueil-Les Aubiers
+Bressuire
+Benet
+Parthenay
+Clessé
+Bressuire
+Noirterre
+La Roche-Clermault
+Joué-lès-Tours
+Les Sables-d'Olonne
+Fougeré
+Bournezeau
+Sigournais
+Clisson
+Cugand-la-Bernardière
+Nieul-Oulmes
+Le Pallet
+Luçon
+L'Herbergement-Les Brouzils
+Nantilly-Saumur
+Port-St-Père-St-Mars
+Ste-Pazanne
+La Crèche
+Lusignan
+La Rochelle-Ville
+St-Jean-d'Angély
+Taillebourg
+Saujon
+Gémozac
+St-André-de-Lidon
+Cozes
+St-Savin-de-Blaye
+Breuillet-Bruyères-le-Châtel
+St-Chéron
+Sermaise
+Auneau
+Voves
+Château-Renault
+Chartres
+Chartres
+Orgères
+Patay
+Courtalain-St-Pellerin
+Vendôme
+Villetrun-Coulommiers
+Vaas
+Mayet
+Écommoy
+Laigné-St-Gervais
+Charmant
+Juvisy
+Tiercé
+Le Vieux-Briollay
+Carquefou
+Gennes-Longuefuye
+Segré
+Baule
+Menars
+Blois
+Paris-Austerlitz (Banlieue)
+Ivry-sur-Seine
+Les Ardoines
+Les Ormes-sur-Vienne
+Naintré-les-Barres
+Poitiers
+Anché-Voulon
+Bassens-Appontements
+Neuville-de-Poitou
+Moncontour-de-Poitou
+Gensac-la-Pallue
+Jarnac-Charente
+Angoulême
+Beillant
+Clérac-Charente
+Bassens-Ville
+Margaux
+Lesparre
+Parempuyre
+Vierzon-Forges
+Salon-la-Tour
+Allassac
+Donzenac
+Bersac
+St-Sulpice-Laurière
+La Jonchère
+Solignac-Le Vigen
+Les Aubrais-Orléans
+Lamothe-Fénelon
+Thédirac-Peyrilles
+Lalbenque-Fontanes
+Montpezat
+Romorantin
+Bléré-la-Croix
+Veretz-Montlouis
+Mennetou-sur-Cher
+Montrichard
+Buzançais
+Villedieu-sur-Indre
+La Douzillère
+Cormery
+Loches
+Argenton-sur-Creuse
+Port-de-Piles
+Bossay
+Buzançais
+La Ferté-Imbault
+Châteauponsac
+Vaulry
+Nantiat
+Civray-Ville
+St-Saviol
+La Rochefoucauld
+Limoges-Montjovis
+St-Brice-sur-Vienne
+Saillat-Chassenon
+Négrondes
+Bussière-Galant
+Vignols-St-Solve
+St-Aulaire
+Nexon
+St-Yrieix
+Neuvic (Dordogne)
+St-Astier
+Terrasson-Lavilledieu
+Siorac-en-Périgord
+Montcaret
+Lamonzie-St-Martin
+Lalinde
+Les Versannes
+Le Bugue
+Pexiora
+Carcassonne
+Narbonne
+Cérons
+Barsac
+Lamothe-Landerron
+Cadaujac
+Labège-Village
+Sète
+Ste-Bazeille
+Valence-d'Agen
+Montauban-Ville-Bourbon
+Grisolles
+Cazouls-lès-Béziers
+St-Avit
+Vianne
+Lavardac
+Nérac
+Gimont-Cahuzac
+Lardenne
+St-Martin-du-Touch
+Pontrieux-Halte
+Frynaudour
+Beauvoisin
+Rognac
+Thenissey
+Dijon-Ville
+Beaune
+St-Vallier-sur-Rhône
+La Roche-de-Glun
+Montélimar
+Chasse-sur-Rhône
+Clonas
+Le Péage-de-Roussillon
+Paris-Bercy
+Villefranche-sur-Saône
+Anse
+Quincieux
+Lyon-Vaise
+Direction Régionale Rhône-Alpes
+Lyon-Jean-Macé
+Ternay
+Chagny
+Mâcon-Ville
+Combs-la-Ville-Quincy
+Lieusaint-Moissy
+Thomery
+Montereau
+Pont-sur-Yonne
+Étigny-Véron
+Brienon
+Nuits-sous-Ravières
+Châtenay-sur-Seine
+Montereau
+Auxon
+St-Florentin-Ville
+Troyes
+Châtillon-sur-Seine
+Pavillon-lès-Grancey
+Champagne-sur-Vingeanne
+Poinson-Beneuvre
+Gray
+Poinçon
+Veuxhaulles
+Brion-sur-Ource
+Châtillon-sur-Seine
+Is-sur-Tille
+Dijon-Porte-Neuve
+Ruffey-lès-Echirey
+Gemeaux
+Frasne
+St-Jean-de-Losne
+Essertenne-Cecey
+Besançon-Viotte
+Rochefort-sur-Nenon
+Grandvillars
+Miserey-Salines
+Pont-de-Roide
+Aiserey
+Louhans
+Tavaux
+Verdun-sur-le-Doubs
+Chaugey
+Dole-la-Bedugue
+Besançon-Mouillère
+Saône
+Le Valdahon Camp Militaire
+Pontarlier
+Gilley
+Morbier
+Lons-le-Saunier
+Le Moulin-des-Ponts
+Arbois
+Cousance
+Lons-le-Saunier
+Louhans
+Mézériat
+Bourg-en-Bresse
+St-Jean-sur-Veyle
+Marlieux-Châtillon
+St-Paul-de-Varax
+Servas-Lent
+Sault-Brénaz
+St-Maurice-de-Beynost
+Beynost
+La Boisse
+La Burbanche
+Divonne-les-Bains
+Lyon-St-Clair
+Les Moussoux
+Montroc-le-Planet
+Vallorcine
+Rumilly
+Pringy (Haute-Savoie)
+La Roche-sur-Foron
+Annemasse
+Grésy-sur-Aix
+Albertville
+Albertville
+Centron
+Aime-La Plagne
+Hirson
+Tucquegnieux
+Tiercelet-Villers-la-Montagne
+Liart
+Tournes
+Athies-sous-Laon
+Liesse-Gizy
+Margival
+Vauxaillon
+Dercy-Mortiers
+Voyenne
+Ormoy-Villers
+Crépy-en-Valois
+Crépy-en-Valois
+Ormoy-Villers
+Duvy
+Wacquemoulin
+Moreuil
+Longueau
+Villers-Cotterêts
+Anizy-Pinon
+Mennessis
+Essigny-le-Grand
+Essigny-le-Petit
+Recquignies
+Jeumont
+Creil
+Villers-St-Paul
+Rieux-Angicourt
+Origny-Ste-Benoite
+Longueil-Ste-Marie
+Roye (Somme)
+Busigny
+Bouchain
+Lourches
+Bavay
+St-Amand-les-Eaux
+Blanc-Misseron
+Sin-le-Noble
+Montdidier
+Épehy
+Mennessis
+Tergnier
+La Fère
+Amiens
+Guillaucourt
+Douai
+Somain
+Wallers
+Beuvrages
+Pont-de-la-Deule
+Seclin
+Sains-du-Nord
+Templeuve
+Nomain
+La Bleuse-Borne
+Le Poirier
+Berlaimont
+Nomain-Ouvignies
+Cysoing
+Tressin
+Lezennes
+Annappes
+Ascq
+Roubaix-Wattrelos
+Pont-de-la-Deule
+La Borne-Blanche
+Orry-la-Ville-Coye
+Chantilly-Gouvieux
+Gannes
+Breteuil-Embranchement
+Paris-Nord-Souterraine
+Brebières
+Libercourt
+La Faloise
+Longueau
+Buire-sur-l'Ancre
+Miraumont
+Lille-St-Sauveur
+Corbehem
+Pont-de-Sallaumines
+Don-Sainghin
+Pont-à-Vendin
+Haubourdin
+Don-Sainghin
+Lille CHR
+St-Pol-sur-Ternoise
+Abbeville
+Marais-de-Lomme
+Lomme (MIN)
+Nieppe
+La Madeleine (Nord)
+Les Fontinettes
+Pont-d'Ardres
+Comines-France
+Hazebrouck
+Coudekerque-Branche
+Lens
+Loos-en-Gohelle
+Mazingarbe
+Ste-Pazanne
+St-Gilles-Croix-de-Vie
+La Bernerie
+St-Hilaire-de-Chaléons
+La Feuillardais-Vue
+St-Maixent (Deux-Sèvres)
+Niort
+Épannes
+La Rochelle-Pallice
+Saintes
+Pisany
+Royan
+Saujon
+Arpajon (Essonne)
+Bonneval
+Allonnes-Boisville
+Notre-Dame-d'Oé
+Pezou
+Vendôme
+Coltainville
+Beaulieu-Le Coudray
+Villeneuve-d'Ingré
+Châteaudun
+Montoire-sur-le-Loir
+La Chapelle-Vendômoise
+Fossé-Marolles
+Neuillé-Pont-Pierre
+St-Paterne
+Aubigné-Racan
+Tours
+Luxé
+Mouthiers (Charente)
+Parcoul-Médillac
+St-Michel-sur-Orge
+Marolles-en-Hurepoix
+Chamarande
+Étampes
+Guillerval
+St-Sulpice-Izon
+Bassens-Appontements
+Artenay (Loiret)
+Cercottes
+Les Aubrais-Orléans
+Beaugency
+Chouzy
+Paris-Austerlitz
+Dangé
+La Tricherie
+Chasseneuil (Vienne)
+Trogues
+Cavignac
+La Chapelle-d'Ambès
+Ravezies
+Macau
+Soulac-sur-Mer
+Le Verdon
+Vierzon-Ville
+Uzerche
+Forgevieille
+La Souterraine
+Le Palais
+Pierre-Buffière
+Montierchaume
+St-Cyr-en-Val
+Nouan-le-Fuzelier
+Salbris
+Souillac
+Dégagnac
+Réalville
+Montauban-Ville-Bourbon
+Thésée
+Clion-sur-Indre
+Montbazon
+Verneuil-St-Germain
+Tournon-St-Martin
+La Haye-Descartes
+Villeherviers
+Faubourg-d'Orléans
+Les Quatre-Roues
+Pruniers
+Mignaloux-Nouaillé
+Bessines
+Le Dorat
+Nieul (Haute-Vienne)
+Roumazières-Loubert
+Thiviers
+Agonac
+Nexon
+Le Burg
+Brive-la-Gaillarde
+La Meyze
+Marmande
+Larche
+Cornil
+Thenon
+La Bachellerie
+Montpon-Ménestérol
+Razac
+Périgueux
+Milhac-d'Auberoche
+Épinay-sur-Orge
+Ste-Geneviève-des-Bois
+Étréchy
+St-Denis-de-Pile
+Vayres
+La Gorp
+Bassens-Ville
+Limeray
+Noizay
+Montlouis
+Villeperdue
+Ste-Maure-Noyant
+La Chapelle-St-Mesmin
+Chaingy
+Meung-sur-Loire
+Boisseaux
+La Chaussée-St-Victor
+Choisy-le-Roi
+Futuroscope
+St-Benoît (Vienne)
+Ligugé
+Iteuil
+Vivonne
+St-Jean-de-Sauves
+Poitiers
+Gaillan
+Blanquefort
+Queyrac-Montalivet
+Bordeaux-St-Jean
+Masseret
+Noailles (Corrèze)
+Fromental
+Déols
+Lothiers
+Argenton-sur-Creuse
+La Ferté-St-Aubin
+Theillay (Loir-et-Cher)
+Cahors
+Vierzon-Ville
+Azay-sur-Cher
+St-Pierre-des-Corps
+Villefranche-sur-Cher
+Selles-sur-Cher
+St-Aignan-Noyers
+Châtillon-sur-Indre
+Reignac
+Chambourg
+Le Grand-Pressigny
+Varennes-sur-Fouzon
+Valençay
+Loreux
+Romorantin (Voie étroite)
+Le Dorat
+Mignaloux-Nouaillé
+Montmorillon
+Le Dorat
+Bellac
+Exideuil-sur-Vienne
+Ruelle
+Verneuil-sur-Vienne
+St-Junien
+La Coquille
+Périgueux
+Limoges-Bénédictins
+L'Aiguille
+Pompadour
+Varetz
+Coussac-Bonneval
+Bussière-Galant
+Mussidan
+Aubazine-St-Hilaire
+Condat-le-Lardin
+Marsac (Dordogne)
+Niversac
+Vézac-Beynac
+Lamothe-Montravel
+Bergerac
+Trémolat
+La Gélie
+Belvès
+Villefranche-du-Périgord
+Trentels-Ladignac
+Laroque
+Capendu
+Moux (Aude)
+Lézignan (Aude)
+Langon
+St-Pierre-d'Aurillac
+Caudrot
+Gironde
+Villenave-d'Ornon
+Fenouillet
+Fenouillet-St-Alban
+Lacourtensourt
+Lalande-Église
+Montlaur
+Baziège
+Marseillan-Plage
+Marmande
+Golfech
+Colomiers
+Colomiers-Lycée-International
+Mérenvielle
+Montréjeau-Gourdan-Polignan
+Portet-St-Simon
+Fauga
+Ampèrevielle
+Châteaubriant
+Retiers
+Rennes
+Guichen-Bourg-des-Comptes
+Pléchâtel
+Messac-Guipry
+Bannalec
+Landerneau
+Redon
+Landaul-Mendon
+Brandérion
+Kerhostin
+Quiberon
+Moustéru
+Plougonver
+Gourland
+Pontrieux
+Lancerf
+Lorient
+Marigny (Deux-Sèvres)
+Courtalain-St-Pellerin
+Château-la-Vallière
+Droué
+Mondoubleau
+Vivy
+Vivy
+Angers-St-Laud
+Savonnières
+Langeais
+La Chapelle-sur-Loire
+Couëron
+La Croix-de-Méan
+Saumur-Rive-Droite
+Batz-sur-Mer
+Angers-St-Serge
+Erdre-Active
+La Chapelle-Aulnay
+Châteaubriant Tram-Train
+Angers-Maître-École
+La Jumellière
+Cholet
+Chalonnes
+Bressuire
+Azay-le-Rideau
+Druye
+Chantonnay
+Chavagnes-les-Redoux
+La Meilleraie (Vendée)
+Boussay-La Bruffière
+Cholet
+Benet
+Clisson
+Pas-Enchantés
+Vertou
+Velluire
+Les Moutiers-en-Retz
+Pornic
+St-Hilaire-de-Chaléons
+St-Père-en-Retz
+Paimboeuf
+Chemere-Arthon
+Aigrefeuille-Le Thou
+La Mothe-St-Héray
+Mauzé
+Coulombiers
+St-Mariens-St-Yzan
+Blaye
+Dourdan-la-Forêt
+Cloyes
+Monnaie
+Fréteval-Morée
+Dreux
+Gommiers
+Bricy-Boulay
+Janville
+Troo
+Arnage
+Le Mans
+St-Pierre-des-Corps
+Bordeaux-Bastide
+Les Aubrais-Orléans
+La Couronne
+Montmoreau
+Chalais
+St-Aigulin-La Roche-Chalais
+Athis-Mons
+Lardy
+Monnerville
+Château-Gaillard
+Libourne
+St-Pierre-des-Corps
+Port-de-Piles
+Chevilly
+Landry
+Bourg-St-Maurice
+Culoz
+Montmélian
+Chamousset
+St-Avre-la-Chambre
+St-Julien-Montricher
+St-Michel-Valloire
+Chambéry-Challes-les-Eaux
+Lépin-le-Lac-La Bauche
+Brens-Virignin
+Manosque-Gréoux-les-Bains
+Septèmes
+Grenoble
+Pont-de-Claix
+Monestier-de-Clermont
+L'Isle-d'Abeau
+Virieu-sur-Bourbre
+Châbons
+Rives
+Réaumont-St-Cassien
+Chandieu-Toussieu
+Vénissieux-Nord
+St-Rambert-d'Albon
+Poliénas
+Domène
+Lancey
+Échirolles
+Crest
+Beaurières
+Montmaur
+L'Argentière-les-Écrins
+Cavaillon
+Sénas
+Cavaillon
+Cannes-Marchandises
+Cannes-la-Bocca
+St-Laurent-du-Var
+Nice-Riquier
+Monte-Carlo-Country-Club
+Monaco-Monte-Carlo
+Vidauban
+St-Cyr-les-Lècques-La Cadière
+Toulon
+La Garde
+Solliès-Pont
+Marseille-Maritime-Mourepiane
+Rassuen
+L'Estaque
+Fos-Mériquette
+Marseille-Euroméditerranée
+Marseille-St-Charles
+Le Bosquet
+Nice-Ville
+Peille
+Touët-de-l'Escarène
+Halte Nice-Pont-Michel
+Breil-sur-Roya
+La Brigue
+Fontan-Saorge
+Pont-de-l'Étoile
+Auriol-St-Zacharie
+Bobigny
+Rougemont-Chanteloup
+Péreire-Levallois
+St-Gratien
+St-Ouen-les-Docks
+La Folie-Nanterre
+Suresnes-Mont-Valérien
+Asnières-sur-Seine
+Courbevoie
+Puteaux
+Paris-St-Lazare
+Bougival
+Louveciennes
+L'Étang-la-Ville
+Nanterre-Université
+Paris-St-Lazare
+Issy
+Viroflay-Rive-Gauche
+Haussmann-St-Lazare
+Paris-Gobelins
+Paris-Nord-Souterraine
+St-Michel-Notre-Dame
+Paris-Austerlitz (Banlieue)
+Pont-de-Rungis-Aéroport-d'Orly
+Rungis (MIN)
+Rungis-la-Fraternelle
+Grigny-Centre
+Le Bras-de-fer
+Chilly-Mazarin
+Petit-Vaux
+La Courneuve-Dugny
+Valenton
+Vauboyen
+Rungis-la-Fraternelle
+Ucciani
+Ajaccio
+Borgo
+Rivoli
+Dunkerque-Port-Ouest
+Achicourt
+Duisans
+Maroeuil
+Ligny-St-Flochel
+Hesdin
+St-Pol-sur-Ternoise
+Étaples-Le Touquet
+Dannes-Camiers
+Pont-de-Briques
+Outreau
+Picquigny
+Wimille-Wimereux
+Le Haut-Banc
+Caffiers
+Les Fontinettes
+Villaines (Val-d'Oise)
+Belloy-St-Martin
+Creil
+Cires-lès-Mello
+Mouy-Bury
+Villers-St-Sépulcre
+Montreuil-sur-Thérain
+Rochy-Condé
+La Rue-St-Pierre
+Remy (Oise)
+Rochy-Condé
+Attichy
+Breteuil-Ville
+Morgny
+Serqueux
+Longuerue-Vieux-Manoir
+Namps-Quevauvillers
+St-Roch (Somme)
+Saleux
+Bornel-Belle-Église
+Villers-sur-Thère
+Herchies
+Groslay
+Cergy-Préfecture
+Cergy-le-Haut
+Taverny
+Méry (Val-d'Oise)
+Précy-sur-Oise
+Chaponval
+Auvers-sur-Oise
+Valmondois
+L'Isle-Adam-Parmain
+Chaumont-en-Vexin
+Forges-les-Eaux
+Ermont-Eaubonne
+Boissy-l'Aillerie
+Montgeroult-Courcelles
+Auneuil
+St-Germer
+Le Stade
+La Frette-Montigny
+Andrésy
+Triel-sur-Seine
+Mantes-Station
+Asnières-sur-Seine
+Bois-Colombes
+Colombes
+Conflans-Fin-d'Oise
+Les Vallées
+Virville-Manneville
+St-Laurent-Gainneville
+Le Havre
+Houilles-Carrières-sur-Seine
+Vernouillet-Verneuil
+Mantes-Station
+Rosny-sur-Seine
+Gisors
+Montville
+St-Victor
+Dieppe
+St-Pierre-le-Viger-Fontaine-le-Du
+Colleville-Ste-Hélène
+Épouville
+Gravenchon-Port-Jérome
+Grand-Quevilly
+Audrieu
+St-Aubin-du-Vieil-Évreux
+Bueil
+Valognes
+Mantes-la-Jolie
+Ménerville
+Louviers
+Évreux-Embranchement
+Glos-Montfort
+Bourgtheroulde-Thuit-Hébert
+Beuzeville (Eure)
+St-Pierre-du-Vauvray
+Trouville-Deauville
+Surdon
+Fontenay-le-Fleury
+Tacoignières-Richebourg
+Beynes
+Nézel-Aulnay
+Conches
+Coutras
+St-Seurin-sur-l'Isle
+St-Médard-de-Guizières
+Sarlat
+Prigonrieux-La Force
+Mauzac
+Castillon
+Cuzorn
+Agen
+La Souys
+Pezens
+Marcorignan
+Bordeaux-St-Jean
+Portets
+Preignac
+St-Jory
+Toulouse-Matabiau
+Montaudran
+Labège-Innopole
+Colombiers
+Aiguillon
+Colayrac
+Agen
+Bon-Encontre
+Tonneins
+Malause
+Eauze
+Bon-Encontre
+Layrac
+Longages-Noé
+Empalot
+Évron
+Domfront (Sarthe)
+Viroflay-Rive-Gauche
+Coignières
+Gazeran
+Damville
+Argentan
+Montbizot
+Vendôme-Villiers-sur-Loir
+La Chapelle-Anthenaise
+Vire
+Bonnemain
+Dol
+La Gouesnière-Cancale
+St-Brieuc
+St-Pol-de-Léon
+Angers-Maître-École
+Voivres
+La Suze
+Châteaubriant
+Janzé
+Laillé
+Quimper
+Châteaulin
+St-Gildas-des-Bois
+Sévérac
+Malansac
+Vannes
+Hennebont
+Gestel
+Penthièvre
+L'Isthme
+Baud
+St-Brieuc
+Plaintel
+Pontivy
+Rosporden
+Concarneau
+Guingamp
+Coat-Guégan
+Lavilledieu
+Condom
+Lectoure
+Ste-Christie
+Astaffort
+L'Isle-Jourdain (Gers)
+Pibrac
+Beaumont-de-Lomagne
+Toulouse-Matabiau
+St-Martory
+Lannemezan
+Bassanese
+Ponte-Nuovo
+Soveria
+Belgodere
+Glos-Montfort
+Viessoix
+Argentan
+Flers
+Chartres
+St-Sauveur-Châteauneuf
+Dreux
+Lamballe
+Pleine-Fougères
+Coutances
+St-Brieuc
+Guingamp
+Belle-Isle-Bégard
+Plouaret
+Courville-sur-Eure
+La Loupe
+Épernon
+La Villette-St-Prest
+Plouigneau
+Pleyber-Christ
+Guimiliau
+La Forest
+Bellevue
+Cesson-Sévigné-Halte
+St-Pierre-la-Cour
+Bretoncelles
+St-Mars-la-Brière
+Sillé-le-Guillaume
+Breteuil
+Alençon
+La Hutte-Coulombiers
+Ségrie-Vernie
+Montabard
+Sées
+Surdon
+Vivoin-Beaumont
+Alençon
+Rennes
+Chevaigné
+Dingé
+Lannion
+Roscoff
+Écouflant
+Le Mans
+Pontchâteau
+Gennes-Longuefuye
