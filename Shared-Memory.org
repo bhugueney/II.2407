@@ -1,0 +1,59 @@
+#+TITLE: Shared memory
+
+* Shared memory
+
+Cf.
+http://www.cse.psu.edu/~deh25/cmpsc473/notes/OSC/Processes/shm-posix-producer.c
+
+
+#+BEGIN_SRC c :tangle shm-write-read.c
+  #include <stdio.h>
+  #include <unistd.h>
+  #include <stdlib.h>
+  #include <fcntl.h>
+  #include <sys/stat.h>
+  #include <sys/mman.h>
+  #include <errno.h>
+  #include <string.h>
+
+  int main(int argc, char* argv[]){
+    const char *name = "/shm-example";  // file name
+    const int SIZE = 4096;    // file size
+
+    int shm_fd;   // file descriptor, from shm_open()
+    char *shm_base; // base address, from mmap()
+    char *ptr;    // shm_base is fixed, ptr is movable
+    char *to_write= argc >1 ? argv[1] : "test";
+    /* create the shared memory segment as if it was a file */
+    shm_fd = shm_open(name, O_CREAT | O_RDWR, 0666);
+    if (shm_fd == -1) {
+      printf("prod: Shared memory failed: %s\n", strerror(errno));
+      exit(1);
+    }
+
+    /* configure the size of the shared memory segment */
+    ftruncate(shm_fd, SIZE);
+    shm_base = mmap(0, SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
+    if (shm_base == MAP_FAILED) {
+      printf("prod: Map failed: %s\n", strerror(errno));
+      // close and shm_unlink?
+      exit(1);
+    }
+    while(1){
+      ptr=shm_base;
+      for (int i=0; i !=10; ++i){
+      usleep(1000);
+        ptr+=sprintf(ptr,"[%s]",to_write);
+      }
+      if (argc >2){fprintf(stderr, ">%s<\n",shm_base); sleep(1);}
+    }
+    return 0;
+  }
+#+END_SRC
+#+BEGIN_SRC shell
+gcc shm-write-read.c -o shm-write-read -lrt
+#+END_SRC
+
+#+BEGIN_SRC shell
+./shm-write-read toto & ./shm-write-read tutu output
+#+END_SRC
